@@ -8,7 +8,7 @@
   $timeline-width: 4px;
 
   %timeline {
-    content: '';
+    content: "";
     width: $timeline-width;
     position: relative;
     float: left;
@@ -39,7 +39,7 @@
 
     /* Year dot */
     &::after {
-      content: '';
+      content: "";
       display: inline-block;
       position: relative;
       border-radius: 50%;
@@ -117,7 +117,7 @@
 
     &::before {
       /* the dot before post title */
-      content: '';
+      content: "";
       display: inline-block;
       position: relative;
       border-radius: 50%;

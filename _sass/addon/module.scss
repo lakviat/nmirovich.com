@@ -11,7 +11,7 @@
 }
 
 %section {
-  main & {
+  #core-wrapper & {
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
 
@@ -30,14 +30,18 @@
     .anchor {
       visibility: hidden;
       opacity: 0;
-      transition: opacity 0.25s ease-in, visibility 0s ease-in 0.25s;
+      transition:
+        opacity 0.25s ease-in,
+        visibility 0s ease-in 0.25s;
     }
 
     &:hover {
       .anchor {
         visibility: visible;
         opacity: 1;
-        transition: opacity 0.25s ease-in, visibility 0s ease-in 0s;
+        transition:
+          opacity 0.25s ease-in,
+          visibility 0s ease-in 0s;
       }
     }
   }
@@ -123,26 +127,8 @@
 }
 
 %text-highlight {
-  color: var(--text-muted-hightlight-color);
+  color: inherit;
   font-weight: 600;
-}
-
-%text-sm {
-  font-size: 0.85rem;
-}
-
-%text-xs {
-  font-size: 0.8rem;
-}
-
-%sup-fn-target {
-  &:target {
-    background-color: var(--footnote-target-bg);
-    width: -moz-fit-content;
-    width: -webkit-fit-content;
-    width: fit-content;
-    transition: background-color 1.75s ease-in-out;
-  }
 }
 
 /* ---------- scss mixin --------- */
@@ -167,11 +153,7 @@
   padding-right: $val;
 }
 
-@mixin placeholder {
-  color: var(--text-muted-color) !important;
-}
-
-@mixin placeholder-focus {
+@mixin input-placeholder {
   opacity: 0.6;
 }
 
@@ -187,7 +169,7 @@
   transform: translateX(-50%);
 }
 
-@mixin prompt($type, $fa-content, $fa-style: 'solid') {
+@mixin prompt($type, $fa-content, $fa-style: "solid") {
   &.prompt-#{$type} {
     background-color: var(--prompt-#{$type}-bg);
 

@@ -1,7 +1,12 @@
+# eslint-disable yml/no-empty-mapping-value
 # The Site Configuration
 
 # Import the theme
 theme: jekyll-theme-chirpy
+
+# Change the following value to '/PROJECT_NAME' ONLY IF your site type is GitHub Pages Project sites
+# and doesn't have a custom domain.
+baseurl: ""
 
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
@@ -14,35 +19,31 @@ timezone: America/Chicago
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Nurlan Mirovich # the main title
+title: Sergii Grytsaienko # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: "Leadership in the Digital Age: Tech Insights, Ideas, and Innovations" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  Sergii Grytsaienko's blog about Leadership in the Digital Age,Tech Insights, Ideas, and Innovations
 
-# Fill in the protocol & hostname for your site.
-# e.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://nmirovich.com"
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: "https://sgryt.com"
 
 github:
-  username: lakviat # change to your github username
+  username: s-gryt # change to your github username
 
 # twitter:
-  # username: twitter_username # change to your twitter username
+#   username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Nurlan Mirovich
-  email: lakviat@yahoo.com # change to your email address
+  name: Sergii Grytsaienko
+  email: sergiigrytsaienko@gmail.com # change to your email address
   links:
-    # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/nurlan-mirovich-542335178/ # change to your twitter homepage
-    - https://github.com/lakviat # change to your github homepage
-    # Uncomment below to add more social links
-    # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/sergii-grytsaienko
+    - https://github.com/s-gryt # change to your github homepage
+    - https://sgryt.com
 
 google_site_verification: # fill in to your verification string
 
@@ -50,7 +51,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-14HQ6E79PF
 
 # Prefer color scheme setting.
 #
@@ -73,7 +74,8 @@ theme_mode: # [light|dark]
 # img_cdn: "https://chirpy-img.netlify.app"
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/assets/img/avatar.jpg"
+# avatar: "/commons/avatar.jpg"
+avatar: /assets/img/avatar.jpg
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -82,7 +84,8 @@ comments:
   active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
-    shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    comments: true
+    shortname: sgryt_com # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
@@ -111,8 +114,14 @@ pwa:
 
 paginate: 10
 
-# The base URL of your site
-baseurl: "nmirovich.com"
+plugins:
+  - jekyll
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-scholar
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -177,12 +186,29 @@ compress_html:
 exclude:
   - "*.gem"
   - "*.gemspec"
+  - .commitlintrc
+  - .editorconfig
+  - .env
+  - .eslintignore
+  - .eslintrc
+  - .lintstagedrc
+  - .markdownlintignore
+  - .markdownlintrc
+  - .prettierignore
+  - .prettierrc
+  - .releaserc
+  - .stylelintignore
+  - .stylelintrc
+  - CHANGELOG.md
+  - CNAME
   - docs
-  - tools
-  - README.md
+  - Gemfile
+  - Gemfile.lock
   - LICENSE
-  - rollup.config.js
+  - node_modules
   - package*.json
+  - README.md
+  - tools
 
 jekyll-archives:
   enabled: [categories, tags]

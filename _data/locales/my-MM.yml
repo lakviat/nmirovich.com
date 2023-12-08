@@ -13,6 +13,7 @@ tabs:
   home: အဓိကစာမျက်နှာ
   categories: ကဏ္ဍများ
   tags: နာမ(တက်ဂ်)များ
+  # eslint-disable-next-line yml/no-irregular-whitespace
   archives: မှတ်တမ်း​တိုက်
   about: အကြောင်းအရာ
 
