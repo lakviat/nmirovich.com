@@ -19,18 +19,18 @@ timezone: America/Chicago
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Sergii Grytsaienko # the main title
+title: Nurlan Mirovich # the main title
 
 tagline: "Leadership in the Digital Age: Tech Insights, Ideas, and Innovations" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Sergii Grytsaienko's blog about Leadership in the Digital Age,Tech Insights, Ideas, and Innovations
+  Nurlan Mirovich blog about Leadership and Innovations
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://sgryt.com"
+url: "https://nmirovich.com"
 
 github:
-  username: s-gryt # change to your github username
+  username: lakviat # change to your github username
 
 # twitter:
 #   username: twitter_username # change to your twitter username
@@ -38,12 +38,12 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Sergii Grytsaienko
-  email: sergiigrytsaienko@gmail.com # change to your email address
+  name: Nurlan Mirovich
+  email: lakviat@gmail.com # change to your email address
   links:
-    - https://www.linkedin.com/in/sergii-grytsaienko
-    - https://github.com/s-gryt # change to your github homepage
-    - https://sgryt.com
+    - https://www.linkedin.com/in/nurlan-mirovich
+    - https://github.com/lakviat # change to your github homepage
+    - https://nmirovich.com
 
 google_site_verification: # fill in to your verification string
 
@@ -51,7 +51,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: G-14HQ6E79PF
+  # id: G-14HQ6E79PF
 
 # Prefer color scheme setting.
 #
@@ -85,7 +85,7 @@ comments:
   # The active options are as follows:
   disqus:
     comments: true
-    shortname: sgryt_com # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+    shortname: nmirovich.com # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
     repo: # <gh-username>/<repo>
