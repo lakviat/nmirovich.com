@@ -1,5 +1,5 @@
 {
-  "name": "sgryt.com",
+  "name": "nmirovich.com",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s-gryt/sgryt.com.git"
+    "url": "git+https://github.com/lakviat/nmirovich.com.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/s-gryt/sgryt.com/issues"
+    "url": "https://github.com/lakviat/nmirovich.com/issues"
   },
-  "homepage": "https://github.com/s-gryt/sgryt.com#readme",
+  "homepage": "https://github.com/lakviat/nmirovich.com#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",

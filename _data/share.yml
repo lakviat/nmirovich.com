@@ -10,13 +10,13 @@ platforms:
   #   icon: "fab fa-facebook-square"
   #   link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
 
-  # - type: Instagram
-  #   icon: "fab fa-facebook-square"
-  #   link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+  - type: Instagram
+    icon: "fab fa-instagram-square"
+    link: "https://www.instagram.com/nurlan_mirovich/"
 
   - type: Telegram
     icon: fab fa-telegram
-    link: "https://t.me/share/url?url=URL&text=TITLE"
+    link: "https://t.me/Nate_Mir"
 
   - type: Linkedin
     icon: fab fa-linkedin
