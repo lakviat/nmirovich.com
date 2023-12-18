@@ -1,12 +1,12 @@
 ---
-title: "Software Testing"
-author: Nurlan Mirivoch
+title: "Software Testing and best practices"
+author: lakviat
 date: 2023-09-18 15:00:00 CDT
 categories:
   [
+    Software Testing
     Software Development,
     Code Reviews,
-    Software Testing
     Soft Skills,
     Software Engineering,
     Project Management,
@@ -16,8 +16,8 @@ categories:
   ]
 tags:
   [
-    Soft Skills,
     Software Testing
+    Soft Skills,
     Software Development,
     Code Reviews,
     Code Quality,
@@ -33,10 +33,9 @@ image:
   alt: Navigating the MetaVerse A Software Engineer's Journey Blending Technical Prowess with Soft Skills
 ---
 
-## The Soft Edge Advantage: Mastering Big Tech Interviews Beyond Code for Developers
+## Did you know that software bugs costs United States $2 trillion in 2022
 
-Introduction:
-Join me on a voyage into the heart of Meta, where cutting-edge technology meets the nuanced realm of soft skills. As a software engineer at Meta, I've discovered that success in this dynamic environment goes beyond mastering programming languages. In this blog, I'll share my experiences and insights, emphasizing the crucial interplay between technical expertise and soft skills in fostering a thriving career.
+Yes, you heard it right! over 2 trillion dollars bad bugs costs to the United States, just to put in a perspective the budget of the United States Air Force is ~200 billion dollars, which makes it 10 times smaller than the bugs costs to the United States, in this topic we will discuss what we can do to improve the quality of the softwares and prevent bugs costing stuggering budget to IT companies
 
 ## Unraveling Technical Debt
 
