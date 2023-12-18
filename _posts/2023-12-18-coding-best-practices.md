@@ -26,7 +26,7 @@ tags:
   ]
 mermaid: true
 image:
-  path: /assets/img/posts/2023-12-18-coding-best-practices.md/cover.png
+  path: /assets/img/posts/2023-12-18-coding-best-practices/cover.png
   alt: "Coding Best Practices"
 ---
 
