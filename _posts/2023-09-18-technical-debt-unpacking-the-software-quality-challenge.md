@@ -1,12 +1,13 @@
 ---
-title: "Unpacking Technical Debt: A Guide for Developers"
-author: s-gryt
+title: "Software Testing"
+author: Nurlan Mirivoch
 date: 2023-09-18 15:00:00 CDT
 categories:
   [
     Software Development,
     Code Reviews,
-    Technical Debt,
+    Software Testing
+    Soft Skills,
     Software Engineering,
     Project Management,
     Productivity,
@@ -15,7 +16,8 @@ categories:
   ]
 tags:
   [
-    Technical Debt,
+    Soft Skills,
+    Software Testing
     Software Development,
     Code Reviews,
     Code Quality,
@@ -28,12 +30,13 @@ tags:
   ]
 image:
   path: /assets/img/posts/2023-09-18-technical-debt-unpacking-the-software-quality-challenge/cover.png
-  alt: Unpacking Technical Debt in Software Development
+  alt: Navigating the MetaVerse A Software Engineer's Journey Blending Technical Prowess with Soft Skills
 ---
 
-## Technical Debt: Unpacking the Software Quality Challenge
+## The Soft Edge Advantage: Mastering Big Tech Interviews Beyond Code for Developers
 
-In the realm of software development, there's an invisible force that can significantly impact your projects and their long-term success—technical debt. In this comprehensive exploration, we will delve into the heart of technical debt, understanding its origins, its various manifestations, and how to effectively manage it.
+Introduction:
+Join me on a voyage into the heart of Meta, where cutting-edge technology meets the nuanced realm of soft skills. As a software engineer at Meta, I've discovered that success in this dynamic environment goes beyond mastering programming languages. In this blog, I'll share my experiences and insights, emphasizing the crucial interplay between technical expertise and soft skills in fostering a thriving career.
 
 ## Unraveling Technical Debt
 
