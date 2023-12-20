@@ -3,7 +3,6 @@ title: "Software Testing Technologies"
 author: lakviat
 date: 2023-09-18 15:00:00 CDT
 categories:
-  [
   - 🧪 Software Testing
   - 💻 Software Development
   - 🤝 Code Reviews
@@ -13,9 +12,7 @@ categories:
   - 📈 Productivity
   - 🌟 Code Quality
   - 🏆 Best Practices
-  ]
 tags:
-  [
   - 🧪 Software Testing
   - 🧠 Soft Skills
   - 💻 Software Development
@@ -27,7 +24,7 @@ tags:
   - 📈 Productivity
   - 🏆 Best Practices
   - 🛠️ Software Maintenance
-  ]
+mermaid: true
 image:
   path: /assets/img/posts/2023-09-18-software-testing-technologies/cover.png
   alt: Navigating the MetaVerse A Software Engineer's Journey Blending Technical Prowess with Soft Skills
