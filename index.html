@@ -2,3 +2,46 @@
 layout: home
 # Index page
 ---
+# Welcome to Our Website!
+
+<!-- Your existing content goes here -->
+
+<div id="donation-section">
+    <h2>Support Our Cause</h2>
+
+    <p>If you find our content valuable, consider making a donation to support us.</p>
+
+    <div id="donation-amounts">
+        <button onclick="makeDonation(5)">Donate $5</button>
+        <button onclick="makeDonation(10)">Donate $10</button>
+        <button onclick="makeDonation(20)">Donate $20</button>
+        <button onclick="makeDonation(50)">Donate $50</button>
+        <input type="text" id="custom-amount" placeholder="Other Amount">
+        <button onclick="makeCustomDonation()">Donate</button>
+    </div>
+
+    <!-- Apple Pay button -->
+    <button id="apple-pay-button" onclick="initiateApplePay()">Donate with Apple Pay</button>
+
+    <script>
+        function makeDonation(amount) {
+            // Your logic to process the donation with the selected amount
+            alert('Donating $' + amount);
+        }
+
+        function makeCustomDonation() {
+            var customAmount = document.getElementById('custom-amount').value;
+            // Your logic to process the donation with the custom amount
+            alert('Donating $' + customAmount);
+        }
+
+        function initiateApplePay() {
+            // Your Apple Pay setup and handling logic goes here
+            // This will include creating a payment request and handling the result
+            // This is a simplified example, and you should refer to Apple's documentation for the complete process
+            // Also, make sure to handle this on the server securely
+
+            alert('Initiating Apple Pay...');
+        }
+    </script>
+</div>
