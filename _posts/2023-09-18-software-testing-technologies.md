@@ -1,5 +1,5 @@
 ---
-title: "Software Testing and best practices"
+title: "Software Testing Technologies"
 author: lakviat
 date: 2023-09-18 15:00:00 CDT
 categories:
@@ -29,7 +29,7 @@ tags:
   - 🛠️ Software Maintenance
   ]
 image:
-  path: /assets/img/posts/2023-09-18-technical-debt-unpacking-the-software-quality-challenge/cover.png
+  path: /assets/img/posts/2023-09-18-software-testing-technologies/cover.png
   alt: Navigating the MetaVerse A Software Engineer's Journey Blending Technical Prowess with Soft Skills
 ---
 
