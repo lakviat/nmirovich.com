@@ -7,17 +7,14 @@ categories:
   - 🏆 Best Practices
   - 🌐 Code Quality
   - 🧰 Development Tools
-  - 🔍 ESLint
   - 🚀 JavaScript
 tags:
   - 👩‍💻 Team Lead
   - 🚀 Developer Experience
   - 🌐 Software Quality
   - 🏢 Business
-  - 📝 ESLint Plugins
   - 🤝 Code Review
   - 📊 Static Analysis
-  - 🧹 Linting
   - ⏱️ Development Efficiency
   - 🚀 JavaScript Development
 mermaid: true
