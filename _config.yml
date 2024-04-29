@@ -24,10 +24,10 @@ title: Nurlan Mirovich # the main title
 tagline: "Coding Chronicles: A Programmer's Journey into the Digital Realm" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Nurlan Mirovich blog about Leadership and Innovations
+  Nurlan Mirovich Leadership and Innovations
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: "https://nmirovich.com"
+url: "https://www.nmirovich.com"
 
 github:
   username: lakviat # change to your github username
@@ -43,7 +43,7 @@ social:
   links:
     - https://www.linkedin.com/in/nurlan-mirovich-542335178/
     - https://github.com/lakviat # change to your github homepage
-    - https://nmirovich.com
+    - https://www.nmirovich.com
 
 google_site_verification: # fill in to your verification string
 
