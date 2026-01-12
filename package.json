@@ -1,5 +1,5 @@
 {
-  "name": "nmirovich.com",
+  "name": "nmirovich.info",
   "version": "0.0.0",
   "description": "",
   "scripts": {
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lakviat/nmirovich.com.git"
+    "url": "git+https://github.com/lakviat/nmirovich.info.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lakviat/nmirovich.com/issues"
+    "url": "https://github.com/lakviat/nmirovich.info/issues"
   },
-  "homepage": "https://github.com/lakviat/nmirovich.com#readme",
+  "homepage": "https://github.com/lakviat/nmirovich.info#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.7.1",
     "@commitlint/config-conventional": "^17.7.0",

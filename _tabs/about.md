@@ -9,7 +9,7 @@ order: 4
 
 🚀 Armed with a wealth of ambitions in software engineering, I'm here to dish out practical insights and solutions. Whether you're a developer, a tech enthusiast, or an industry pro, consider this space your tech haven. Just remember, the opinions unleashed here are all mine!
 
-🙌 Thanks a million for dropping by [nmirovich.com](https://www.nmirovich.com) Brace yourself for a tech-packed journey that's both informative and downright inspiring.
+🙌 Thanks a million for dropping by [nmirovich.info](https://www.nmirovich.info) Brace yourself for a tech-packed journey that's both informative and downright inspiring.
 
 Let the coding adventures begin! 💻✨
 
