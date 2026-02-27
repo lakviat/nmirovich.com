@@ -1,51 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Software Testing Technologies</title>
-  <desc id="desc">Black ink style diagram for DevOps testing on off-white background.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Software Testing Technologies cover</title>
+  <desc id="d">DevOps pipeline and quality check on dark background with emerald accent.</desc>
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b1e"/>
+      <stop offset="1" stop-color="#25262b"/>
+    </linearGradient>
     <style>
-      .bg { fill: #f4f4f1; }
-      .ink { fill: none; stroke: #111; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
-      .soft { fill: none; stroke: #111; stroke-width: 1.5; opacity: 0.35; }
-      .title { font: 700 54px Georgia, "Times New Roman", serif; fill: #101010; }
-      .sub { font: 400 27px Georgia, "Times New Roman", serif; fill: #202020; opacity: 0.8; }
-      .cap { font: 700 18px "Courier New", monospace; fill: #111; }
+      .line { stroke: #a1a1aa; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #10b981; }
+      .dim { stroke: #71717a; stroke-width: 1.5; fill: none; opacity: 0.5; }
     </style>
   </defs>
-
-  <rect class="bg" width="1200" height="630"/>
-
-  <g>
-    <path class="soft" d="M0 145 H260"/>
-    <path class="soft" d="M0 235 H220"/>
-    <path class="soft" d="M0 325 H300"/>
-    <path class="soft" d="M900 135 H1200"/>
-    <path class="soft" d="M950 235 H1200"/>
-    <path class="soft" d="M880 335 H1200"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Pipeline / config panel -->
+  <g transform="translate(100 140)">
+    <rect class="line" x="0" y="0" width="280" height="180" rx="20"/>
+    <path class="line" d="M36 54h208M36 90h208M36 126h208"/>
+    <circle class="accent" cx="244" cy="54" r="6"/>
+    <circle class="accent" cx="220" cy="90" r="6"/>
+    <circle class="accent" cx="196" cy="126" r="8">
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </circle>
   </g>
-
-  <g transform="translate(120 185)">
-    <rect class="ink" x="0" y="0" width="280" height="185" rx="18"/>
-    <text class="cap" x="28" y="58">TEST PIPELINE</text>
-    <path class="ink" d="M28 88 H245 M28 118 H245 M28 148 H245"/>
-    <circle cx="245" cy="88" r="6" fill="#111"/>
-    <circle cx="210" cy="118" r="6" fill="#111"/>
-    <circle cx="170" cy="148" r="6" fill="#111"/>
+  <!-- Cloud / deploy -->
+  <g transform="translate(420 100)">
+    <path class="line" d="M160 320C64 320 12 268 12 208C12 148 58 104 112 102C136 62 176 36 222 36C276 36 320 72 338 120C402 124 460 172 460 236C460 300 402 348 338 348H160Z"/>
+    <rect class="line" x="172" y="164" width="132" height="36" rx="8"/>
+    <rect class="line" x="172" y="212" width="132" height="36" rx="8"/>
+    <rect class="line" x="172" y="260" width="132" height="36" rx="8"/>
+    <circle class="accent" cx="280" cy="182" r="5"/>
+    <circle class="accent" cx="280" cy="230" r="5"/>
+    <circle class="accent" cx="280" cy="278" r="5"/>
   </g>
-
-  <g transform="translate(470 160)">
-    <path class="ink" d="M130 230 C45 230 0 188 0 138 C0 92 36 58 80 56 C98 28 127 10 161 10 C198 10 231 31 242 62 C291 64 330 98 330 147 C330 196 290 230 241 230 H130 Z"/>
-    <rect class="ink" x="110" y="90" width="115" height="30" rx="8"/>
-    <rect class="ink" x="110" y="127" width="115" height="30" rx="8"/>
-    <rect class="ink" x="110" y="164" width="115" height="30" rx="8"/>
+  <!-- Check / success -->
+  <g transform="translate(880 140)">
+    <circle class="line" cx="120" cy="120" r="100"/>
+    <path class="accent" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"
+      d="M70 120 L105 158 L180 82" stroke-dasharray="220" stroke-dashoffset="220">
+      <animate attributeName="stroke-dashoffset" values="220;0" dur="0.01" fill="freeze"/>
+    </path>
   </g>
-
-  <g transform="translate(900 180)">
-    <path class="ink" d="M0 65 C0 18 40 0 82 0 C124 0 164 18 164 65 C164 111 124 130 82 130 C40 130 0 111 0 65Z"/>
-    <path class="ink" d="M82 130 C124 130 164 147 164 194 C164 240 124 260 82 260 C40 260 0 240 0 194 C0 147 40 130 82 130Z"/>
-    <text class="cap" x="82" y="72" text-anchor="middle">BUILD</text>
-    <text class="cap" x="82" y="202" text-anchor="middle">TEST</text>
-  </g>
-
-  <text class="title" x="120" y="515">Software Testing Technologies</text>
-  <text class="sub" x="120" y="560">DevOps quality from commit to release</text>
+  <!-- Flow lines -->
+  <path class="dim" d="M380 220 H420 M800 220 H820" stroke-dasharray="6 8">
+    <animate attributeName="stroke-dashoffset" values="0;-28" dur="3s" repeatCount="indefinite"/>
+  </path>
 </svg>

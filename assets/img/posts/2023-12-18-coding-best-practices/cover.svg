@@ -1,38 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Coding Best Practices</title>
-  <desc id="desc">Minimal black ink cover for clean coding principles.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Coding Best Practices cover</title>
+  <desc id="d">Code panel and quality check on dark background with teal accent.</desc>
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b1e"/>
+      <stop offset="1" stop-color="#25262b"/>
+    </linearGradient>
     <style>
-      .bg { fill: #f4f4f1; }
-      .ink { fill: none; stroke: #101010; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-      .soft { fill: none; stroke: #111; stroke-width: 1.5; opacity: 0.34; }
-      .title { font: 700 56px Georgia, "Times New Roman", serif; fill: #101010; }
-      .sub { font: 400 27px Georgia, "Times New Roman", serif; fill: #222; opacity: 0.78; }
-      .mono { font: 600 17px "Courier New", monospace; fill: #111; }
+      .line { stroke: #a1a1aa; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #06b6d4; }
+      .dim { stroke: #71717a; stroke-width: 1.5; fill: none; opacity: 0.5; }
     </style>
   </defs>
-
-  <rect class="bg" width="1200" height="630"/>
-  <path class="soft" d="M0 140 H270 M0 230 H240 M0 320 H220 M900 140 H1200 M950 230 H1200 M900 320 H1200"/>
-
-  <g transform="translate(140 125)">
-    <rect class="ink" x="0" y="0" width="450" height="300" rx="22"/>
-    <text class="mono" x="36" y="66">function readableCode(input) {</text>
-    <text class="mono" x="36" y="104">  const validated = sanitize(input);</text>
-    <text class="mono" x="36" y="142">  return transform(validated);</text>
-    <text class="mono" x="36" y="180">}</text>
-    <path class="ink" d="M36 220 H410"/>
-    <path class="ink" d="M36 254 H360"/>
-    <circle cx="410" cy="220" r="6" fill="#101010"/>
-    <circle cx="360" cy="254" r="6" fill="#101010"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Code / practices panel -->
+  <g transform="translate(100 140)">
+    <rect class="line" x="0" y="0" width="520" height="320" rx="24"/>
+    <path class="line" d="M48 78h422M48 130h382M48 182h342M48 234h302"/>
+    <circle class="accent" cx="470" cy="78" r="6"/>
+    <circle class="accent" cx="430" cy="130" r="6"/>
+    <circle class="accent" cx="390" cy="182" r="6"/>
+    <circle class="accent" cx="350" cy="234" r="8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
   </g>
-
-  <g transform="translate(650 155)">
-    <circle class="ink" cx="180" cy="130" r="118"/>
-    <path class="ink" d="M110 130 L160 180 L256 82"/>
-    <path class="soft" d="M40 260 H320 M60 290 H340 M80 320 H360"/>
+  <!-- Quality check -->
+  <g transform="translate(740 160)">
+    <circle class="line" cx="170" cy="140" r="128"/>
+    <path class="accent" stroke="#06b6d4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"
+      d="M95 140l55 55 120-109" stroke-dasharray="280" stroke-dashoffset="280">
+      <animate attributeName="stroke-dashoffset" values="280;0" dur="0.01" fill="freeze"/>
+    </path>
   </g>
-
-  <text class="title" x="140" y="525">Coding Best Practices</text>
-  <text class="sub" x="140" y="568">clarity, consistency, maintainability</text>
+  <!-- Soft flow line -->
+  <path class="dim" d="M620 300 H700" stroke-dasharray="8 12">
+    <animate attributeName="stroke-dashoffset" values="0;-40" dur="4s" repeatCount="indefinite"/>
+  </path>
 </svg>

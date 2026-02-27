@@ -1,40 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">Invest In Yourself</title>
-  <desc id="desc">Minimal black ink personal growth illustration.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">Invest In Yourself cover</title>
+  <desc id="d">Growth and learning curve on dark background with amber accent.</desc>
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b1e"/>
+      <stop offset="1" stop-color="#25262b"/>
+    </linearGradient>
+    <linearGradient id="rise" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#fbbf24"/>
+    </linearGradient>
     <style>
-      .bg { fill: #f5f5f2; }
-      .ink { fill: none; stroke: #111; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-      .soft { fill: none; stroke: #111; stroke-width: 1.5; opacity: 0.34; }
-      .title { font: 700 56px Georgia, "Times New Roman", serif; fill: #101010; }
-      .sub { font: 400 27px Georgia, "Times New Roman", serif; fill: #222; opacity: 0.78; }
-      .mono { font: 600 18px "Courier New", monospace; fill: #111; }
+      .line { stroke: #a1a1aa; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #f59e0b; }
+      .dim { stroke: #71717a; stroke-width: 1.5; fill: none; opacity: 0.5; }
     </style>
   </defs>
-
-  <rect class="bg" width="1200" height="630"/>
-  <path class="soft" d="M0 150 H300 M0 250 H260 M0 350 H220 M920 130 H1200 M980 230 H1200 M920 330 H1200"/>
-
-  <g transform="translate(150 120)">
-    <rect class="ink" x="0" y="0" width="330" height="390" rx="24"/>
-    <path class="ink" d="M52 96 H278 M52 146 H278 M52 196 H278 M52 246 H278"/>
-    <text class="mono" x="52" y="78">learning_plan.md</text>
-    <circle cx="286" cy="96" r="7" fill="#111"/>
-    <circle cx="258" cy="146" r="7" fill="#111"/>
-    <circle cx="231" cy="196" r="7" fill="#111"/>
-    <circle cx="205" cy="246" r="7" fill="#111"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Stack / progress -->
+  <g transform="translate(100 110)">
+    <rect class="line" x="0" y="0" width="340" height="400" rx="24"/>
+    <path class="line" d="M44 88h252M44 156h252M44 224h252M44 292h252"/>
+    <circle class="accent" cx="296" cy="88" r="6"/>
+    <circle class="accent" cx="264" cy="156" r="6"/>
+    <circle class="accent" cx="232" cy="224" r="6"/>
+    <circle class="accent" cx="200" cy="292" r="8">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
   </g>
-
-  <g transform="translate(560 160)">
-    <path class="ink" d="M0 290 L130 0 L260 290"/>
-    <path class="ink" d="M44 290 L130 86 L216 290"/>
-    <path class="ink" d="M130 0 V290"/>
-    <circle cx="130" cy="0" r="9" fill="#111"/>
-    <circle cx="0" cy="290" r="8" fill="#111"/>
-    <circle cx="260" cy="290" r="8" fill="#111"/>
-    <path class="soft" d="M310 18 H450 M330 78 H470 M300 138 H440"/>
+  <!-- Growth peak -->
+  <g transform="translate(520 100)">
+    <path class="line" d="M0 400 L160 0 L320 400 Z"/>
+    <path class="line" d="M60 400 L160 120 L260 400 Z"/>
+    <path class="line" d="M160 0 v400"/>
+    <circle class="accent" cx="160" cy="0" r="10">
+      <animate attributeName="r" values="8;12;8" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle class="accent" cx="0" cy="400" r="5" opacity="0.7"/>
+    <circle class="accent" cx="320" cy="400" r="5" opacity="0.7"/>
+    <path class="dim" stroke="url(#rise)" stroke-width="4" fill="none" stroke-linecap="round"
+      d="M80 360 Q160 80 240 360" opacity="0.6">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+    </path>
   </g>
-
-  <text class="title" x="150" y="540">Invest In Yourself</text>
-  <text class="sub" x="150" y="582">small habits compound into technical mastery</text>
+  <!-- Soft lines -->
+  <path class="dim" d="M0 140h80M0 260h60M1100 160h100M1120 280h80" stroke-dasharray="8 12">
+    <animate attributeName="stroke-dashoffset" values="0;-40" dur="12s" repeatCount="indefinite"/>
+  </path>
 </svg>

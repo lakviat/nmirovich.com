@@ -1,39 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-  <title id="title">GraphQL and Graph API</title>
-  <desc id="desc">Minimal black ink illustration for GraphQL and graph data flows.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
+  <title id="t">GraphQL cover</title>
+  <desc id="d">Graph network and API nodes on dark background with violet accent.</desc>
   <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1b1e"/>
+      <stop offset="1" stop-color="#25262b"/>
+    </linearGradient>
     <style>
-      .bg { fill: #f4f4f1; }
-      .ink { fill: none; stroke: #111; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
-      .soft { fill: none; stroke: #111; stroke-width: 1.5; opacity: 0.32; }
-      .title { font: 700 54px Georgia, "Times New Roman", serif; fill: #101010; }
-      .sub { font: 400 26px Georgia, "Times New Roman", serif; fill: #222; opacity: 0.78; }
+      .line { stroke: #a1a1aa; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .accent { fill: #8b5cf6; }
+      .dim { stroke: #71717a; stroke-width: 1.5; fill: none; opacity: 0.5; }
     </style>
   </defs>
-
-  <rect class="bg" width="1200" height="630"/>
-  <path class="soft" d="M0 130 H340 M0 240 H290 M0 350 H260 M860 130 H1200 M920 250 H1200 M860 370 H1200"/>
-
-  <g transform="translate(170 128)">
-    <circle class="ink" cx="190" cy="190" r="116"/>
-    <circle cx="190" cy="74" r="8" fill="#111"/>
-    <circle cx="290" cy="132" r="8" fill="#111"/>
-    <circle cx="290" cy="248" r="8" fill="#111"/>
-    <circle cx="190" cy="306" r="8" fill="#111"/>
-    <circle cx="90" cy="248" r="8" fill="#111"/>
-    <circle cx="90" cy="132" r="8" fill="#111"/>
-    <path class="ink" d="M190 74 L290 132 L290 248 L190 306 L90 248 L90 132 Z"/>
-    <path class="ink" d="M90 132 L190 190 L290 132 M290 248 L190 190 L90 248"/>
-    <circle cx="190" cy="190" r="10" fill="#111"/>
-
-    <rect class="ink" x="362" y="105" width="300" height="170" rx="18"/>
-    <path class="ink" d="M390 143 H634 M390 180 H634 M390 217 H634"/>
-    <circle cx="620" cy="143" r="6" fill="#111"/>
-    <circle cx="578" cy="180" r="6" fill="#111"/>
-    <circle cx="540" cy="217" r="6" fill="#111"/>
-    <path class="soft" d="M306 190 H362"/>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Graph / hexagon hub -->
+  <g transform="translate(120 90)">
+    <circle class="line" cx="200" cy="195" r="140"/>
+    <path class="line" d="M200 55 L328 132 L328 258 L200 335 L72 258 L72 132 Z"/>
+    <path class="line" d="M72 132 L200 195 L328 132 M328 258 L200 195 L72 258"/>
+    <circle class="accent" cx="200" cy="55" r="8"/>
+    <circle class="accent" cx="328" cy="132" r="8"/>
+    <circle class="accent" cx="328" cy="258" r="8"/>
+    <circle class="accent" cx="200" cy="335" r="8"/>
+    <circle class="accent" cx="72" cy="258" r="8"/>
+    <circle class="accent" cx="72" cy="132" r="8"/>
+    <circle class="accent" cx="200" cy="195" r="12">
+      <animate attributeName="r" values="10;14;10" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
   </g>
-
-  <text class="title" x="170" y="525">Decoding GraphQL and Graph API</text>
-  <text class="sub" x="170" y="568">clean contracts, predictable data, simpler clients</text>
+  <!-- API / response panel -->
+  <g transform="translate(620 150)">
+    <rect class="line" x="0" y="0" width="400" height="240" rx="24"/>
+    <path class="line" d="M52 72h296M52 128h296M52 184h296"/>
+    <circle class="accent" cx="316" cy="72" r="6"/>
+    <circle class="accent" cx="284" cy="128" r="6"/>
+    <circle class="accent" cx="252" cy="184" r="6"/>
+  </g>
+  <!-- Connection arc -->
+  <path class="dim" d="M520 250 Q580 180 620 270" stroke-dasharray="6 10">
+    <animate attributeName="stroke-dashoffset" values="0;-32" dur="3.5s" repeatCount="indefinite"/>
+  </path>
 </svg>
