@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Coding Best Practices</title>
+  <desc id="desc">Minimal black ink cover for clean coding principles.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f4f4f1; }
+      .ink { fill: none; stroke: #101010; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .soft { fill: none; stroke: #111; stroke-width: 1.5; opacity: 0.34; }
+      .title { font: 700 56px Georgia, "Times New Roman", serif; fill: #101010; }
+      .sub { font: 400 27px Georgia, "Times New Roman", serif; fill: #222; opacity: 0.78; }
+      .mono { font: 600 17px "Courier New", monospace; fill: #111; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="630"/>
+  <path class="soft" d="M0 140 H270 M0 230 H240 M0 320 H220 M900 140 H1200 M950 230 H1200 M900 320 H1200"/>
+
+  <g transform="translate(140 125)">
+    <rect class="ink" x="0" y="0" width="450" height="300" rx="22"/>
+    <text class="mono" x="36" y="66">function readableCode(input) {</text>
+    <text class="mono" x="36" y="104">  const validated = sanitize(input);</text>
+    <text class="mono" x="36" y="142">  return transform(validated);</text>
+    <text class="mono" x="36" y="180">}</text>
+    <path class="ink" d="M36 220 H410"/>
+    <path class="ink" d="M36 254 H360"/>
+    <circle cx="410" cy="220" r="6" fill="#101010"/>
+    <circle cx="360" cy="254" r="6" fill="#101010"/>
+  </g>
+
+  <g transform="translate(650 155)">
+    <circle class="ink" cx="180" cy="130" r="118"/>
+    <path class="ink" d="M110 130 L160 180 L256 82"/>
+    <path class="soft" d="M40 260 H320 M60 290 H340 M80 320 H360"/>
+  </g>
+
+  <text class="title" x="140" y="525">Coding Best Practices</text>
+  <text class="sub" x="140" y="568">clarity, consistency, maintainability</text>
+</svg>

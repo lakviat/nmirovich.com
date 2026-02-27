@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">AI in Software Testing</title>
+  <desc id="desc">Minimal black ink drawing on off-white background.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f5f2; }
+      .ink { fill: none; stroke: #121212; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+      .soft { fill: none; stroke: #121212; stroke-width: 1.5; opacity: 0.35; }
+      .title { font: 700 58px Georgia, "Times New Roman", serif; fill: #101010; letter-spacing: 0.2px; }
+      .sub { font: 400 28px Georgia, "Times New Roman", serif; fill: #222; opacity: 0.8; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="630"/>
+
+  <g>
+    <path class="soft" d="M0 130 H360"/>
+    <path class="soft" d="M0 210 H320"/>
+    <path class="soft" d="M0 290 H280"/>
+    <path class="soft" d="M810 120 H1200"/>
+    <path class="soft" d="M860 220 H1200"/>
+    <path class="soft" d="M820 320 H1200"/>
+  </g>
+
+  <g transform="translate(210 140)">
+    <rect class="ink" x="0" y="0" width="320" height="320" rx="30"/>
+    <rect class="ink" x="60" y="60" width="200" height="200" rx="18"/>
+    <path class="ink" d="M95 115 H225 M95 160 H225 M95 205 H225 M115 95 V225 M160 95 V225 M205 95 V225"/>
+    <circle cx="160" cy="160" r="15" fill="#121212"/>
+
+    <path class="soft" d="M-80 160 H0 M320 160 H400 M160 -80 V0 M160 320 V400"/>
+    <circle cx="-80" cy="160" r="5" fill="#121212"/>
+    <circle cx="400" cy="160" r="5" fill="#121212"/>
+    <circle cx="160" cy="-80" r="5" fill="#121212"/>
+    <circle cx="160" cy="400" r="5" fill="#121212"/>
+  </g>
+
+  <text class="title" x="610" y="300">AI in Software Testing</text>
+  <text class="sub" x="610" y="345">minimal signals, maximum confidence</text>
+</svg>

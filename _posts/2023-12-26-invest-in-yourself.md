@@ -1,7 +1,7 @@
 ---
 title: "Invest In Yourself"
 author: lakviat
-date: 2023-12-26 15:00:00 CDT
+date: 2024-01-30 15:00:00 CDT
 categories:
   - 🛠️ Self Development
   - 💻 Software Development
@@ -21,7 +21,7 @@ tags:
   - 🚀 JavaScript Development
 mermaid: true
 image:
-  path: /assets/img/posts/2023-12-26-invest-in-yourself/cover.png
+  path: /assets/img/posts/2023-12-26-invest-in-yourself/cover.svg
   alt: "Invest In Yourself"
 
 ---

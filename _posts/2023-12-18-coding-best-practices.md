@@ -19,7 +19,7 @@ tags:
   - 🚀 JavaScript Development
 mermaid: true
 image:
-  path: /assets/img/posts/2023-12-18-coding-best-practices/cover.png
+  path: /assets/img/posts/2023-12-18-coding-best-practices/cover.svg
   alt: "Coding Best Practices"
 ---
 

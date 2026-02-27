@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Invest In Yourself</title>
+  <desc id="desc">Minimal black ink personal growth illustration.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f5f5f2; }
+      .ink { fill: none; stroke: #111; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+      .soft { fill: none; stroke: #111; stroke-width: 1.5; opacity: 0.34; }
+      .title { font: 700 56px Georgia, "Times New Roman", serif; fill: #101010; }
+      .sub { font: 400 27px Georgia, "Times New Roman", serif; fill: #222; opacity: 0.78; }
+      .mono { font: 600 18px "Courier New", monospace; fill: #111; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1200" height="630"/>
+  <path class="soft" d="M0 150 H300 M0 250 H260 M0 350 H220 M920 130 H1200 M980 230 H1200 M920 330 H1200"/>
+
+  <g transform="translate(150 120)">
+    <rect class="ink" x="0" y="0" width="330" height="390" rx="24"/>
+    <path class="ink" d="M52 96 H278 M52 146 H278 M52 196 H278 M52 246 H278"/>
+    <text class="mono" x="52" y="78">learning_plan.md</text>
+    <circle cx="286" cy="96" r="7" fill="#111"/>
+    <circle cx="258" cy="146" r="7" fill="#111"/>
+    <circle cx="231" cy="196" r="7" fill="#111"/>
+    <circle cx="205" cy="246" r="7" fill="#111"/>
+  </g>
+
+  <g transform="translate(560 160)">
+    <path class="ink" d="M0 290 L130 0 L260 290"/>
+    <path class="ink" d="M44 290 L130 86 L216 290"/>
+    <path class="ink" d="M130 0 V290"/>
+    <circle cx="130" cy="0" r="9" fill="#111"/>
+    <circle cx="0" cy="290" r="8" fill="#111"/>
+    <circle cx="260" cy="290" r="8" fill="#111"/>
+    <path class="soft" d="M310 18 H450 M330 78 H470 M300 138 H440"/>
+  </g>
+
+  <text class="title" x="150" y="540">Invest In Yourself</text>
+  <text class="sub" x="150" y="582">small habits compound into technical mastery</text>
+</svg>
