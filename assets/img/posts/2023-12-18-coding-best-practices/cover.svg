@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
   <title id="t">Coding Best Practices cover</title>
-  <desc id="d">Code panel and quality check on dark background with teal accent.</desc>
+  <desc id="d">Server rack, pipeline flow, and cloud with check — IT, infrastructure, IoT and testing themes.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1a1b1e"/>
@@ -13,27 +13,79 @@
     </style>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- Code / practices panel -->
-  <g transform="translate(100 140)">
-    <rect class="line" x="0" y="0" width="520" height="320" rx="24"/>
-    <path class="line" d="M48 78h422M48 130h382M48 182h342M48 234h302"/>
-    <circle class="accent" cx="470" cy="78" r="6"/>
-    <circle class="accent" cx="430" cy="130" r="6"/>
-    <circle class="accent" cx="390" cy="182" r="6"/>
-    <circle class="accent" cx="350" cy="234" r="8">
-      <animate attributeName="opacity" values="0.8;1;0.8" dur="2.2s" repeatCount="indefinite"/>
+
+  <!-- Left: server rack (IT / infrastructure) -->
+  <g transform="translate(100 100)">
+    <!-- Rack cabinet outline -->
+    <rect class="line" x="0" y="0" width="280" height="400" rx="12"/>
+    <!-- Unit 1: server / appliance slot -->
+    <rect class="line" x="24" y="24" width="232" height="72" rx="6" stroke-dasharray="650" stroke-dashoffset="650">
+      <animate attributeName="stroke-dashoffset" values="650;0;0;650" keyTimes="0;0.08;0.96;1" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <path class="line" d="M48 52h80M48 72h120M48 92h60" stroke-dasharray="280" stroke-dashoffset="280">
+      <animate attributeName="stroke-dashoffset" values="280;0;0;280" keyTimes="0;0.08;0.96;1" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <circle class="accent" cx="236" cy="60" r="5" opacity="0">
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.96;1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Unit 2 -->
+    <rect class="line" x="24" y="108" width="232" height="72" rx="6" stroke-dasharray="650" stroke-dashoffset="650">
+      <animate attributeName="stroke-dashoffset" values="650;0;0;650" keyTimes="0;0.08;0.96;1" dur="5s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <path class="line" d="M48 136h80M48 156h120M48 176h60" stroke-dasharray="280" stroke-dashoffset="280">
+      <animate attributeName="stroke-dashoffset" values="280;0;0;280" keyTimes="0;0.08;0.96;1" dur="5s" begin="0.2s" repeatCount="indefinite"/>
+    </path>
+    <circle class="accent" cx="236" cy="144" r="5" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.08;0.16;0.96;1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Unit 3 -->
+    <rect class="line" x="24" y="192" width="232" height="72" rx="6" stroke-dasharray="650" stroke-dashoffset="650">
+      <animate attributeName="stroke-dashoffset" values="650;0;0;650" keyTimes="0;0.08;0.96;1" dur="5s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <path class="line" d="M48 220h80M48 260h120M48 248h60" stroke-dasharray="280" stroke-dashoffset="280">
+      <animate attributeName="stroke-dashoffset" values="280;0;0;280" keyTimes="0;0.08;0.96;1" dur="5s" begin="0.4s" repeatCount="indefinite"/>
+    </path>
+    <circle class="accent" cx="236" cy="228" r="5" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.16;0.24;0.96;1" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Unit 4 -->
+    <rect class="line" x="24" y="276" width="232" height="72" rx="6" stroke-dasharray="650" stroke-dashoffset="650">
+      <animate attributeName="stroke-dashoffset" values="650;0;0;650" keyTimes="0;0.08;0.96;1" dur="5s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <path class="line" d="M48 304h80M48 324h120M48 344h60" stroke-dasharray="280" stroke-dashoffset="280">
+      <animate attributeName="stroke-dashoffset" values="280;0;0;280" keyTimes="0;0.08;0.96;1" dur="5s" begin="0.6s" repeatCount="indefinite"/>
+    </path>
+    <circle class="accent" cx="236" cy="312" r="6" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.24;0.32;0.96;1" dur="5s" repeatCount="indefinite"/>
     </circle>
   </g>
-  <!-- Quality check -->
-  <g transform="translate(740 160)">
-    <circle class="line" cx="170" cy="140" r="128"/>
-    <path class="accent" stroke="#06b6d4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"
-      d="M95 140l55 55 120-109" stroke-dasharray="280" stroke-dashoffset="280">
-      <animate attributeName="stroke-dashoffset" values="280;0" dur="0.01" fill="freeze"/>
+
+  <!-- Center: pipeline flow (CI / software delivery) — two boxes only -->
+  <g transform="translate(420 240)">
+    <path class="dim" d="M0 60H240" stroke-dasharray="8 14" stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset" values="0;-80;0" keyTimes="0;0.32;1" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <rect class="line" x="80" y="40" width="40" height="40" rx="6"/>
+    <rect class="line" x="200" y="40" width="40" height="40" rx="6"/>
+    <path class="line" d="M100 50h20M100 60h20M100 70h20" stroke-width="1.5"/>
+    <path class="line" d="M220 50h20M220 60h20M220 70h20" stroke-width="1.5"/>
+  </g>
+
+  <!-- Right: cloud with check (cloud / IoT — checks passed, deployed) -->
+  <g transform="translate(660 120)">
+    <!-- Cloud outline: classic cloud shape (cloud computing / IoT) -->
+    <path class="line" d="M220 120
+      Q280 80 340 120
+      Q400 100 420 160
+      Q480 180 460 240
+      Q500 280 420 280
+      H120
+      Q60 280 80 220
+      Q60 160 140 160
+      Q160 100 220 120Z"/>
+    <path class="accent" stroke="#06b6d4" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"
+      d="M200 200l45 50 95-90" stroke-dasharray="280" stroke-dashoffset="280">
+      <animate attributeName="stroke-dashoffset" values="280;0;0;280" keyTimes="0;0.14;0.96;1" dur="5s" begin="0.8s" repeatCount="indefinite"/>
     </path>
   </g>
-  <!-- Soft flow line -->
-  <path class="dim" d="M620 300 H700" stroke-dasharray="8 12">
-    <animate attributeName="stroke-dashoffset" values="0;-40" dur="4s" repeatCount="indefinite"/>
-  </path>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
   <title id="t">Software Testing Technologies cover</title>
-  <desc id="d">DevOps pipeline and quality check on dark background with emerald accent.</desc>
+  <desc id="d">Test runner rack, pipeline flow, and cloud with check — testing and DevOps with green accent.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1a1b1e"/>
@@ -13,36 +13,42 @@
     </style>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- Pipeline / config panel -->
-  <g transform="translate(100 140)">
-    <rect class="line" x="0" y="0" width="280" height="180" rx="20"/>
-    <path class="line" d="M36 54h208M36 90h208M36 126h208"/>
-    <circle class="accent" cx="244" cy="54" r="6"/>
-    <circle class="accent" cx="220" cy="90" r="6"/>
-    <circle class="accent" cx="196" cy="126" r="8">
-      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+
+  <!-- Left: test runner / server rack -->
+  <g transform="translate(100 100)">
+    <rect class="line" x="0" y="0" width="280" height="400" rx="12"/>
+    <rect class="line" x="24" y="24" width="232" height="72" rx="6"/>
+    <path class="line" d="M48 52h80M48 72h120M48 92h60"/>
+    <circle class="accent" cx="236" cy="60" r="5"/>
+    <rect class="line" x="24" y="108" width="232" height="72" rx="6"/>
+    <path class="line" d="M48 136h80M48 156h120M48 176h60"/>
+    <circle class="accent" cx="236" cy="144" r="5"/>
+    <rect class="line" x="24" y="192" width="232" height="72" rx="6"/>
+    <path class="line" d="M48 220h80M48 248h120M48 260h60"/>
+    <circle class="accent" cx="236" cy="228" r="5"/>
+    <rect class="line" x="24" y="276" width="232" height="72" rx="6"/>
+    <path class="line" d="M48 304h80M48 324h120M48 344h60"/>
+    <circle class="accent" cx="236" cy="312" r="6">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
     </circle>
   </g>
-  <!-- Cloud / deploy -->
-  <g transform="translate(420 100)">
-    <path class="line" d="M160 320C64 320 12 268 12 208C12 148 58 104 112 102C136 62 176 36 222 36C276 36 320 72 338 120C402 124 460 172 460 236C460 300 402 348 338 348H160Z"/>
-    <rect class="line" x="172" y="164" width="132" height="36" rx="8"/>
-    <rect class="line" x="172" y="212" width="132" height="36" rx="8"/>
-    <rect class="line" x="172" y="260" width="132" height="36" rx="8"/>
-    <circle class="accent" cx="280" cy="182" r="5"/>
-    <circle class="accent" cx="280" cy="230" r="5"/>
-    <circle class="accent" cx="280" cy="278" r="5"/>
+
+  <!-- Center: two pipeline boxes -->
+  <g transform="translate(420 240)">
+    <path class="dim" d="M0 60H240" stroke-dasharray="8 14" stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset" values="0;-80;0" keyTimes="0;0.3;1" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <rect class="line" x="80" y="40" width="40" height="40" rx="6"/>
+    <rect class="line" x="200" y="40" width="40" height="40" rx="6"/>
+    <path class="line" d="M100 50h20M100 60h20M100 70h20" stroke-width="1.5"/>
+    <path class="line" d="M220 50h20M220 60h20M220 70h20" stroke-width="1.5"/>
   </g>
-  <!-- Check / success -->
-  <g transform="translate(880 140)">
-    <circle class="line" cx="120" cy="120" r="100"/>
-    <path class="accent" stroke="#10b981" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"
-      d="M70 120 L105 158 L180 82" stroke-dasharray="220" stroke-dashoffset="220">
-      <animate attributeName="stroke-dashoffset" values="220;0" dur="0.01" fill="freeze"/>
+
+  <!-- Right: cloud with check (tests passed / deploy) -->
+  <g transform="translate(660 120)">
+    <path class="line" d="M220 120 Q280 80 340 120 Q400 100 420 160 Q480 180 460 240 Q500 280 420 280 H120 Q60 280 80 220 Q60 160 140 160 Q160 100 220 120Z"/>
+    <path class="accent" stroke="#10b981" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" fill="none"
+      d="M200 200l45 50 95-90">
     </path>
   </g>
-  <!-- Flow lines -->
-  <path class="dim" d="M380 220 H420 M800 220 H820" stroke-dasharray="6 8">
-    <animate attributeName="stroke-dashoffset" values="0;-28" dur="3s" repeatCount="indefinite"/>
-  </path>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="t d">
   <title id="t">GraphQL cover</title>
-  <desc id="d">Graph network and API nodes on dark background with violet accent.</desc>
+  <desc id="d">Graph network, pipeline flow, and API response panel — GraphQL/API themes with violet accent.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#1a1b1e"/>
@@ -13,32 +13,45 @@
     </style>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)"/>
-  <!-- Graph / hexagon hub -->
-  <g transform="translate(120 90)">
-    <circle class="line" cx="200" cy="195" r="140"/>
-    <path class="line" d="M200 55 L328 132 L328 258 L200 335 L72 258 L72 132 Z"/>
-    <path class="line" d="M72 132 L200 195 L328 132 M328 258 L200 195 L72 258"/>
-    <circle class="accent" cx="200" cy="55" r="8"/>
-    <circle class="accent" cx="328" cy="132" r="8"/>
-    <circle class="accent" cx="328" cy="258" r="8"/>
-    <circle class="accent" cx="200" cy="335" r="8"/>
-    <circle class="accent" cx="72" cy="258" r="8"/>
-    <circle class="accent" cx="72" cy="132" r="8"/>
-    <circle class="accent" cx="200" cy="195" r="12">
-      <animate attributeName="r" values="10;14;10" dur="2.4s" repeatCount="indefinite"/>
+
+  <!-- Left: graph / network (GraphQL nodes) -->
+  <g transform="translate(100 100)">
+    <rect class="line" x="0" y="0" width="280" height="400" rx="12"/>
+    <circle class="line" cx="140" cy="180" r="100"/>
+    <path class="line" d="M140 80 L218 140 L218 220 L140 280 L62 220 L62 140 Z"/>
+    <path class="line" d="M62 140 L140 180 L218 140 M218 220 L140 180 L62 220"/>
+    <circle class="accent" cx="140" cy="80" r="6"/>
+    <circle class="accent" cx="218" cy="140" r="6"/>
+    <circle class="accent" cx="218" cy="220" r="6"/>
+    <circle class="accent" cx="140" cy="280" r="6"/>
+    <circle class="accent" cx="62" cy="220" r="6"/>
+    <circle class="accent" cx="62" cy="140" r="6"/>
+    <circle class="accent" cx="140" cy="180" r="10">
+      <animate attributeName="r" values="8;12;8" dur="2.4s" repeatCount="indefinite"/>
       <animate attributeName="opacity" values="0.85;1;0.85" dur="2.4s" repeatCount="indefinite"/>
     </circle>
   </g>
-  <!-- API / response panel -->
-  <g transform="translate(620 150)">
-    <rect class="line" x="0" y="0" width="400" height="240" rx="24"/>
-    <path class="line" d="M52 72h296M52 128h296M52 184h296"/>
-    <circle class="accent" cx="316" cy="72" r="6"/>
-    <circle class="accent" cx="284" cy="128" r="6"/>
-    <circle class="accent" cx="252" cy="184" r="6"/>
+
+  <!-- Center: two pipeline boxes -->
+  <g transform="translate(420 240)">
+    <path class="dim" d="M0 60H240" stroke-dasharray="8 14" stroke-dashoffset="0">
+      <animate attributeName="stroke-dashoffset" values="0;-80;0" keyTimes="0;0.3;1" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <rect class="line" x="80" y="40" width="40" height="40" rx="6"/>
+    <rect class="line" x="200" y="40" width="40" height="40" rx="6"/>
+    <path class="line" d="M100 50h20M100 60h20M100 70h20" stroke-width="1.5"/>
+    <path class="line" d="M220 50h20M220 60h20M220 70h20" stroke-width="1.5"/>
   </g>
-  <!-- Connection arc -->
-  <path class="dim" d="M520 250 Q580 180 620 270" stroke-dasharray="6 10">
-    <animate attributeName="stroke-dashoffset" values="0;-32" dur="3.5s" repeatCount="indefinite"/>
-  </path>
+
+  <!-- Right: API / response panel (query result) -->
+  <g transform="translate(660 120)">
+    <rect class="line" x="0" y="0" width="340" height="280" rx="16"/>
+    <path class="line" d="M32 52h276M32 108h276M32 164h276M32 220h276"/>
+    <circle class="accent" cx="288" cy="52" r="5"/>
+    <circle class="accent" cx="256" cy="108" r="5"/>
+    <circle class="accent" cx="224" cy="164" r="5"/>
+    <circle class="accent" cx="192" cy="220" r="6">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
 </svg>

@@ -1,16 +1,31 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
+
 <!-- markdownlint-disable MD041 -->
 
-👋 Hello, tech enthusiasts! Welcome to the digital realm – your prime source for everything software engineering and technology. 🌐💻
+I am Nurlan Mirovich, a software quality engineer focused on AI-assisted
+testing, automation architecture, CI/CD quality gates, and scalable test
+execution.
 
-🚀 Armed with a wealth of ambitions in software engineering, I'm here to dish out practical insights and solutions. Whether you're a developer, a tech enthusiast, or an industry pro, consider this space your tech haven. Just remember, the opinions unleashed here are all mine!
+This site is my technical resume and engineering notebook. I write about
+software development, SDET practices, Robot Framework, Playwright, API testing,
+Kubernetes, Docker, DevOps pipelines, AI quality workflows, and the practical
+systems that help teams ship with confidence.
 
-🙌 Thanks a million for dropping by [nmirovich.info](https://www.nmirovich.info) Brace yourself for a tech-packed journey that's both informative and downright inspiring.
+My current focus is AI integration in quality assurance:
 
-Let the coding adventures begin! 💻✨
+- Reading Jira stories and Slack context to identify missing requirements.
+- Generating regression, smoke, edge-case, and acceptance test scenarios.
+- Running large Robot Framework suites through Docker, Kubernetes, GitHub shards,
+  and Pabot.
+- Publishing Robot reports, dashboards, and artifacts to cloud or enterprise
+  storage.
+- Consolidating reusable framework keywords in global resource files to reduce
+  duplication and improve maintainability.
+
+Opinions here are my own.
 
 <!-- markdownlint-enable MD041 -->

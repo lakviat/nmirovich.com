@@ -21,10 +21,13 @@ timezone: America/Chicago
 
 title: Nurlan Mirovich # the main title
 
-tagline: "Coding Chronicles: A Programmer's Journey into the Digital Realm" # it will display as the sub-title
+tagline: "AI Quality Engineering, SDET, DevOps, and Test Automation" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Nurlan Mirovich Leadership and Innovations
+  Nurlan Mirovich writes about AI integration in quality assurance, SDET
+  architecture, Robot Framework, Pabot, Kubernetes test execution, Dockerized
+  automation, CI/CD quality gates, Jira requirement analysis, Slack QA
+  notifications, DevOps, and software engineering best practices.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://www.nmirovich.info"
@@ -51,8 +54,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-   id: G-QFKDV8NH5G
-
+  id: G-QFKDV8NH5G
 
 # Prefer color scheme setting.
 #
@@ -65,7 +67,7 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: [dark]
+theme_mode: [light]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
