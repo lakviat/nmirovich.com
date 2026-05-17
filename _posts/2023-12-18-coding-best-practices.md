@@ -17,56 +17,95 @@ tags:
   - 📊 Static Analysis
   - ⏱️ Development Efficiency
   - 🚀 JavaScript Development
+  - AI Code Review
+  - Secure Coding
+  - CI/CD
 mermaid: true
+description: "Modern coding best practices for maintainable software: AI-assisted review, static analysis, secure defaults, tests in CI, observability, and clean engineering habits."
 image:
   path: /assets/img/posts/2023-12-18-coding-best-practices/cover.svg
   alt: "Coding Best Practices"
 ---
 
-## Introduction to Coding Best Practices 🚀
+## Modern Coding Best Practices
 
-In the dynamic world of software development, adhering to coding best practices is paramount for creating maintainable, efficient, and high-quality code. Let's dive into essential practices that contribute to a seamless development experience and robust software.
+Coding best practices are no longer only about formatting and naming. Modern
+teams need practices that make code easier to review, safer to deploy, simpler
+to test, and easier for AI tools to reason about.
 
-### Embracing Code Quality 🌐
+Good engineering habits reduce defects before QA ever sees them.
 
-#### Code Review and Collaboration 🤝
+### 1. Code Review and Collaboration
 
-Code reviews foster collaboration and knowledge sharing within development teams. Regular and constructive code reviews contribute to improved code quality and alignment with coding standards.
+Code reviews should protect behavior, not only style. A useful review checks:
 
-#### Static Analysis and Linting 📊🧹
+- Is the requirement implemented clearly?
+- Are edge cases handled?
+- Are errors observable and actionable?
+- Are tests meaningful, not just present?
+- Is the change small enough to reason about?
+- Does the implementation increase or reduce technical debt?
 
-Utilize tools like [ESLint](https://eslint.org/) for static analysis and linting. ESLint plugins, such as [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) for React development, enhance code consistency and catch potential issues early in the development process.
+AI can help summarize diffs, suggest missed test cases, and find suspicious
+logic, but human reviewers still own architecture, product behavior, and risk.
 
-### Development Efficiency with ESLint ⏱️
+### 2. Static Analysis and Linting
 
-#### ESLint for JavaScript Development 🚀
+Use automated checks so reviewers do not waste time on mechanical issues:
 
-ESLint, a popular JavaScript linting tool, goes beyond catching syntax errors. Configure ESLint to enforce coding conventions, stylistic choices, and best practices, significantly enhancing development efficiency.
+- [ESLint](https://eslint.org/) for JavaScript and TypeScript quality rules.
+- [Prettier](https://prettier.io/) for consistent formatting.
+- [Stylelint](https://stylelint.io/) for CSS and SCSS.
+- [SonarQube](https://www.sonarsource.com/products/sonarqube/) or similar tools for maintainability and security signals.
+- Dependency scanning and secret scanning in CI.
 
-#### Custom ESLint Configurations 🛠️
+### 3. Tests Belong in the Development Workflow
 
-Craft custom ESLint configurations tailored to your project's needs. Leverage community-driven ESLint configurations like [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript) to establish a solid foundation for code consistency.
+Every pull request should answer one question: what confidence do we have that
+this change works?
 
-### Developer Experience and Business Impact 👩‍💻🏢
+Useful CI checks include:
 
-#### Elevating Developer Experience 🚀
+- Unit tests for logic.
+- API and contract tests for service behavior.
+- Smoke tests for critical flows.
+- Focused UI tests for business-critical user journeys.
+- Lint, type checks, and dependency/security scans.
+- Artifact publishing for failed test reports.
 
-Prioritize developer experience by integrating tools that provide real-time feedback, such as ESLint integrations in code editors. A positive developer experience directly influences productivity and code quality.
+### 4. Secure and Observable Defaults
 
-#### Aligning with Business Goals 🌐
+Good code is easier to support in production:
 
-Coding best practices are not just about clean code; they align with overarching business goals. Robust codebases are easier to maintain, reducing technical debt and contributing to long-term business success.
+- Validate input at boundaries.
+- Avoid logging secrets, tokens, or sensitive user data.
+- Use clear error messages and structured logs.
+- Add metrics for critical paths.
+- Fail safely when dependencies are unavailable.
+- Keep configuration explicit and environment-specific.
 
-### References and Further Reading 📚
+### 5. Make Code AI-Friendly
 
-For a deeper understanding of coding best practices, explore the following resources:
+AI tools work better when codebases are clean:
+
+- Small functions with clear names.
+- Low duplication.
+- Strong types where possible.
+- Good test names.
+- README files that explain local setup and architecture.
+- Consistent folder structure.
+- Meaningful commit messages and pull request descriptions.
+
+This is not about writing code for AI. It is about writing code that humans and
+tools can both understand.
+
+### References and Further Reading
 
 - [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882) by Robert C. Martin
-- [ESLint Documentation](https://eslint.org/docs/user-guide/getting-started)
+- [ESLint Documentation](https://eslint.org/docs/latest/)
 - [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+- [GitHub code scanning](https://docs.github.com/en/code-security/code-scanning)
+- [OWASP Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
 
-Adopting coding best practices is a journey toward creating resilient software that stands the test of time.
-
----
-
-*Note: This article provides an overview of key coding best practices. For detailed implementation guidance, refer to the respective documentation and resources linked.*
+Best practices are not paperwork. They are how teams lower release risk while
+keeping development fast.

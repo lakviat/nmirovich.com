@@ -1,0 +1,98 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="630"
+  viewBox="0 0 1200 630"
+  role="img"
+  aria-labelledby="t d"
+>
+  <title id="t">Portfolio cover</title>
+  <desc id="d">
+    A bright portfolio board with website cards, deployment lines, and code
+    quality indicators.
+  </desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fbff" />
+      <stop offset="1" stop-color="#dff4ff" />
+    </linearGradient>
+    <style>
+      .line {
+        stroke: #1463ff;
+        stroke-width: 3;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .soft {
+        fill: #ffffff;
+        stroke: #b9d7f5;
+        stroke-width: 2;
+      }
+      .accent {
+        fill: #10a66a;
+      }
+      .coral {
+        fill: #ff6b4a;
+      }
+      .muted {
+        stroke: #85a8c9;
+        stroke-width: 2;
+        fill: none;
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <g transform="translate(96 88)">
+    <rect class="soft" x="0" y="0" width="1008" height="454" rx="18" />
+    <path class="muted" d="M0 72h1008" />
+    <circle class="coral" cx="36" cy="36" r="9" />
+    <circle class="accent" cx="66" cy="36" r="9" />
+    <circle fill="#f5b400" cx="96" cy="36" r="9" />
+  </g>
+  <g transform="translate(160 210)">
+    <rect class="soft" x="0" y="0" width="260" height="140" rx="12" />
+    <path class="line" d="M34 38h132M34 72h190M34 106h86" />
+    <circle class="accent" cx="220" cy="38" r="10">
+      <animate
+        attributeName="opacity"
+        values="0.45;1;0.45"
+        dur="2.8s"
+        repeatCount="indefinite"
+      />
+    </circle>
+  </g>
+  <g transform="translate(470 210)">
+    <rect class="soft" x="0" y="0" width="260" height="140" rx="12" />
+    <path class="line" d="M34 38h150M34 72h174M34 106h112" />
+    <circle class="coral" cx="220" cy="72" r="10">
+      <animate
+        attributeName="opacity"
+        values="1;0.45;1"
+        dur="2.4s"
+        repeatCount="indefinite"
+      />
+    </circle>
+  </g>
+  <g transform="translate(780 210)">
+    <rect class="soft" x="0" y="0" width="260" height="140" rx="12" />
+    <path class="line" d="M34 38h132M34 72h190M34 106h118" />
+    <circle fill="#f5b400" cx="220" cy="106" r="10">
+      <animate
+        attributeName="opacity"
+        values="0.55;1;0.55"
+        dur="2.2s"
+        repeatCount="indefinite"
+      />
+    </circle>
+  </g>
+  <path class="muted" d="M420 280h50M730 280h50" stroke-dasharray="8 12">
+    <animate
+      attributeName="stroke-dashoffset"
+      values="0;-40"
+      dur="3s"
+      repeatCount="indefinite"
+    />
+  </path>
+</svg>

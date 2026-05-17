@@ -33,122 +33,7 @@ endfor %} {% endif %}
       Kubernetes execution grids, Robot Framework, Playwright, API testing, and
       the engineering habits that make releases safer.
     </p>
-    <div class="atlas-actions">
-      <a
-        href="{{ '/portfolio/' | relative_url }}"
-        class="atlas-button atlas-button--primary"
-      >
-        View portfolio
-      </a>
-      <a
-        href="https://github.com/{{ site.github.username }}"
-        class="atlas-button atlas-button--ghost"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GitHub work
-      </a>
-    </div>
   </div>
-
-  <div
-    class="atlas-hero__system"
-    aria-label="AI testing pipeline visualization"
-  >
-    <div class="system-panel system-panel--top">
-      <span>Jira + Slack intake</span>
-      <strong>AI requirement review</strong>
-      <small>Acceptance criteria, edge cases, smoke scope</small>
-    </div>
-    <div class="system-flow">
-      <span>Docker image</span>
-      <span>Kubernetes pods</span>
-      <span>Pabot shards</span>
-      <span>Robot reports</span>
-    </div>
-    <div class="system-metrics">
-      <div>
-        <strong>1,000+</strong>
-        <span>tests</span>
-      </div>
-      <div>
-        <strong>15 min</strong>
-        <span>parallel run</span>
-      </div>
-      <div>
-        <strong>30 pods</strong>
-        <span>K8s scale</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section
-  class="atlas-feature-grid"
-  aria-label="Featured quality engineering systems"
->
-  <article class="atlas-feature atlas-feature--ai">
-    <span class="atlas-feature__label">AI in QA</span>
-    <h2>Requirement-aware testing pipelines</h2>
-    <p>
-      AI reads Jira stories and Slack context, checks missing acceptance
-      criteria, proposes regression, smoke, edge-case, and negative scenarios,
-      then notifies the engineering team before weak stories reach
-      implementation.
-    </p>
-    <ul>
-      <li>Jira requirement analysis</li>
-      <li>Slack quality notifications</li>
-      <li>AI-generated test scenarios</li>
-      <li>Story readiness signals</li>
-    </ul>
-  </article>
-
-  <article class="atlas-feature atlas-feature--scale">
-    <span class="atlas-feature__label">Parallel execution</span>
-    <h2>1,000 test cases in about 15 minutes</h2>
-    <p>
-      Containerized Robot Framework suites run through GitHub shards, Kubernetes
-      pods, Docker images, and Pabot parallelism inside each pod. Results are
-      merged and published as artifacts, local reports, or GCP bucket
-      dashboards.
-    </p>
-    <ul>
-      <li>Dockerized framework images</li>
-      <li>30-pod Kubernetes execution</li>
-      <li>Pabot parallelism per pod</li>
-      <li>Central Robot reporting</li>
-    </ul>
-  </article>
-
-  <article class="atlas-feature atlas-feature--ops">
-    <span class="atlas-feature__label">Environment reliability</span>
-    <h2>Hourly environment health checks</h2>
-    <p>
-      Scheduled pipelines validate service stability before release suites run,
-      reducing false failures and giving teams cleaner signals from automated
-      regression, smoke, and integration tests.
-    </p>
-    <ul>
-      <li>Pre-run environment checks</li>
-      <li>Release readiness gates</li>
-      <li>Failure classification</li>
-      <li>Business-facing dashboards</li>
-    </ul>
-  </article>
-</section>
-
-<section class="atlas-keywords" aria-label="Search focus">
-  <span>AI testing</span>
-  <span>Quality engineering</span>
-  <span>Robot Framework</span>
-  <span>Pabot</span>
-  <span>Kubernetes test automation</span>
-  <span>Dockerized test framework</span>
-  <span>CI/CD quality gates</span>
-  <span>Jira requirement analysis</span>
-  <span>Slack QA notifications</span>
-  <span>Regression automation</span>
 </section>
 
 <div class="atlas-section-heading">
@@ -211,5 +96,37 @@ endfor %} {% endif %}
   {% endfor %}
 </div>
 <!-- #post-list -->
+
+<a
+  href="{{ '/portfolio/' | relative_url }}"
+  class="card-wrapper portfolio-preview"
+>
+  <div class="card post-preview flex-md-row-reverse">
+    <img
+      src="{{ '/assets/img/portfolio-cover.svg' | relative_url }}"
+      w="17"
+      h="10"
+      alt="Portfolio preview"
+    />
+
+    <div class="card-body d-flex flex-column">
+      <h1 class="card-title my-2 mt-md-0">Portfolio</h1>
+
+      <div class="card-text post-content mt-0 mb-2">
+        <p>
+          A compact collection of websites, developer tools, and automation
+          projects with links to live sites and GitHub repositories.
+        </p>
+      </div>
+
+      <div class="post-meta flex-grow-1 d-flex align-items-end">
+        <div class="me-auto">
+          <i class="fas fa-briefcase fa-fw me-1"></i>
+          <span>Selected website work</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</a>
 
 {% if paginator.total_pages > 1 %} {% include post-paginator.html %} {% endif %}
