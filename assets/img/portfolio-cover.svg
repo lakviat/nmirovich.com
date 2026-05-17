@@ -8,91 +8,123 @@
 >
   <title id="t">Portfolio cover</title>
   <desc id="d">
-    A bright portfolio board with website cards, deployment lines, and code
-    quality indicators.
+    Dark portfolio dashboard with website cards, deployment flow, and animated
+    status indicators.
   </desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#f7fbff" />
-      <stop offset="1" stop-color="#dff4ff" />
+      <stop offset="0" stop-color="#1a1b1e" />
+      <stop offset="1" stop-color="#25262b" />
     </linearGradient>
     <style>
       .line {
-        stroke: #1463ff;
-        stroke-width: 3;
+        stroke: #a1a1aa;
+        stroke-width: 2;
         fill: none;
         stroke-linecap: round;
         stroke-linejoin: round;
       }
-      .soft {
-        fill: #ffffff;
-        stroke: #b9d7f5;
+      .dim {
+        stroke: #71717a;
+        stroke-width: 1.5;
+        fill: none;
+        opacity: 0.55;
+      }
+      .panel {
+        fill: none;
+        stroke: #a1a1aa;
         stroke-width: 2;
       }
       .accent {
-        fill: #10a66a;
+        fill: #3b82f6;
       }
-      .coral {
-        fill: #ff6b4a;
+      .green {
+        fill: #10b981;
       }
-      .muted {
-        stroke: #85a8c9;
-        stroke-width: 2;
-        fill: none;
-        opacity: 0.8;
+      .orange {
+        fill: #f59e0b;
       }
     </style>
   </defs>
   <rect width="1200" height="630" fill="url(#bg)" />
-  <g transform="translate(96 88)">
-    <rect class="soft" x="0" y="0" width="1008" height="454" rx="18" />
-    <path class="muted" d="M0 72h1008" />
-    <circle class="coral" cx="36" cy="36" r="9" />
-    <circle class="accent" cx="66" cy="36" r="9" />
-    <circle fill="#f5b400" cx="96" cy="36" r="9" />
-  </g>
-  <g transform="translate(160 210)">
-    <rect class="soft" x="0" y="0" width="260" height="140" rx="12" />
-    <path class="line" d="M34 38h132M34 72h190M34 106h86" />
-    <circle class="accent" cx="220" cy="38" r="10">
+
+  <!-- Left: portfolio project cards -->
+  <g transform="translate(100 100)">
+    <rect class="panel" x="0" y="0" width="300" height="400" rx="12" />
+    <rect class="line" x="34" y="42" width="232" height="78" rx="8" />
+    <path class="dim" d="M58 72h100M58 96h150" />
+    <circle class="accent" cx="236" cy="80" r="7">
       <animate
         attributeName="opacity"
-        values="0.45;1;0.45"
-        dur="2.8s"
-        repeatCount="indefinite"
-      />
-    </circle>
-  </g>
-  <g transform="translate(470 210)">
-    <rect class="soft" x="0" y="0" width="260" height="140" rx="12" />
-    <path class="line" d="M34 38h150M34 72h174M34 106h112" />
-    <circle class="coral" cx="220" cy="72" r="10">
-      <animate
-        attributeName="opacity"
-        values="1;0.45;1"
+        values="0.55;1;0.55"
         dur="2.4s"
         repeatCount="indefinite"
       />
     </circle>
-  </g>
-  <g transform="translate(780 210)">
-    <rect class="soft" x="0" y="0" width="260" height="140" rx="12" />
-    <path class="line" d="M34 38h132M34 72h190M34 106h118" />
-    <circle fill="#f5b400" cx="220" cy="106" r="10">
+    <rect class="line" x="34" y="152" width="232" height="78" rx="8" />
+    <path class="dim" d="M58 182h118M58 206h138" />
+    <circle class="green" cx="236" cy="190" r="7">
       <animate
         attributeName="opacity"
-        values="0.55;1;0.55"
+        values="1;0.55;1"
+        dur="2.6s"
+        repeatCount="indefinite"
+      />
+    </circle>
+    <rect class="line" x="34" y="262" width="232" height="78" rx="8" />
+    <path class="dim" d="M58 292h128M58 316h160" />
+    <circle class="orange" cx="236" cy="300" r="7">
+      <animate
+        attributeName="opacity"
+        values="0.6;1;0.6"
         dur="2.2s"
         repeatCount="indefinite"
       />
     </circle>
   </g>
-  <path class="muted" d="M420 280h50M730 280h50" stroke-dasharray="8 12">
-    <animate
-      attributeName="stroke-dashoffset"
-      values="0;-40"
-      dur="3s"
-      repeatCount="indefinite"
+
+  <!-- Center: deployment flow -->
+  <g transform="translate(450 190)">
+    <path class="dim" d="M0 120h290" stroke-dasharray="8 14">
+      <animate
+        attributeName="stroke-dashoffset"
+        values="0;-70"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </path>
+    <rect class="line" x="38" y="82" width="74" height="74" rx="10" />
+    <rect class="line" x="178" y="82" width="74" height="74" rx="10" />
+    <path class="line" d="M62 108h26M62 124h36M62 140h20" stroke-width="1.5" />
+    <path
+      class="line"
+      d="M202 108h26M202 124h36M202 140h20"
+      stroke-width="1.5"
     />
-  </path>
+  </g>
+
+  <!-- Right: live website / verified output -->
+  <g transform="translate(760 110)">
+    <circle class="line" cx="150" cy="150" r="124" />
+    <path class="line" d="M150 28v244M28 150h244M64 64l172 172M236 64L64 236" />
+    <rect class="panel" x="82" y="320" width="300" height="88" rx="10" />
+    <path class="dim" d="M112 350h120M112 374h188" />
+    <path
+      class="green"
+      stroke="#10b981"
+      stroke-width="10"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      fill="none"
+      d="M132 150l38 42 88-94"
+    />
+    <circle class="accent" cx="150" cy="150" r="12">
+      <animate
+        attributeName="r"
+        values="10;15;10"
+        dur="2s"
+        repeatCount="indefinite"
+      />
+    </circle>
+  </g>
 </svg>
