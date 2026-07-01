@@ -669,6 +669,7 @@ body {
   color: #050505;
   background: #f8f4ee;
   font-family: "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .cv-page {
@@ -681,7 +682,8 @@ body {
 .cv-black,
 .cv-card,
 .cv-photo,
-.cv-image-card {
+.cv-image-card,
+.cv-infra-card {
   border-radius: 14px;
 }
 
@@ -735,11 +737,32 @@ body {
 }
 
 .cv-name {
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: clamp(330px, 42vw, 560px);
   padding: clamp(2rem, 4vw, 4rem);
+}
+
+.cv-name::before {
+  position: absolute;
+  inset: -35% auto -35% -45%;
+  width: 45%;
+  content: "";
+  background: linear-gradient(
+    105deg,
+    transparent,
+    rgba(255, 255, 255, 0.18),
+    transparent
+  );
+  transform: skewX(-18deg);
+  animation: cv-sheen 7s ease-in-out infinite;
+}
+
+.cv-name > * {
+  position: relative;
 }
 
 .cv-name p,
@@ -829,7 +852,6 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .cv-photo {
@@ -837,7 +859,9 @@ body {
 }
 
 .cv-photo img {
-  object-position: 52% 42%;
+  object-fit: contain;
+  object-position: center;
+  background: #111;
 }
 
 .cv-summary {
@@ -845,14 +869,15 @@ body {
   min-height: 300px;
   margin-top: 1.35rem;
   padding: clamp(2rem, 5vw, 5rem);
-  place-items: center;
-  text-align: center;
+  align-items: center;
+  justify-items: end;
+  text-align: left;
   background: #ddd0c6;
   border-radius: 14px;
 }
 
 .cv-summary p {
-  max-width: 720px;
+  max-width: 900px;
   margin: 0;
   color: #050505;
   font-size: clamp(1.05rem, 1.45vw, 1.45rem);
@@ -918,7 +943,50 @@ body {
 }
 
 .cv-image-card img {
+  object-fit: cover;
   object-position: 54% 44%;
+}
+
+.cv-infra-card {
+  display: flex;
+  min-height: 640px;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(2rem, 4vw, 4rem);
+  color: #fff;
+  background: linear-gradient(
+      145deg,
+      rgba(0, 0, 0, 0.92),
+      rgba(7, 22, 44, 0.94)
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.1) 0 1px,
+      transparent 1px 78px
+    );
+}
+
+.cv-infra-card span {
+  margin-bottom: 1rem;
+  color: #9cc5ff;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+}
+
+.cv-infra-card h3 {
+  max-width: 620px;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2.1rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cv-infra-card p {
+  max-width: 520px;
+  margin: 1.5rem 0 0;
+  color: #d8e7ff;
+  line-height: 1.55;
 }
 
 .cv-card-grid {
@@ -950,6 +1018,8 @@ body {
 }
 
 .cv-skills span {
+  position: relative;
+  overflow: hidden;
   display: flex;
   min-height: 130px;
   align-items: center;
@@ -958,6 +1028,40 @@ body {
   font-size: 1.04rem;
   background: #ddd0c6;
   border-radius: 14px;
+  cursor: pointer;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.cv-skills span::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(
+    105deg,
+    transparent 20%,
+    rgba(255, 255, 255, 0.34),
+    transparent 80%
+  );
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.cv-skills span:hover,
+.cv-skills span:focus,
+.cv-skills span:active {
+  background: #e7d9ce;
+  box-shadow: 0 18px 40px rgba(55, 39, 28, 0.14);
+  transform: translateY(-6px) scale(1.012);
+}
+
+.cv-skills span:hover::after,
+.cv-skills span:focus::after,
+.cv-skills span:active::after {
+  opacity: 1;
+  animation: cv-tile-sheen 900ms ease forwards;
 }
 
 .cv-contact {
@@ -1041,7 +1145,8 @@ body {
   }
 
   .cv-photo,
-  .cv-image-card {
+  .cv-image-card,
+  .cv-infra-card {
     min-height: 420px;
   }
 
@@ -1088,8 +1193,13 @@ body {
     min-height: 330px;
   }
 
+  .cv-name h1 {
+    font-size: clamp(3.2rem, 15vw, 4.8rem);
+  }
+
   .cv-photo {
-    min-height: 360px;
+    min-height: auto;
+    aspect-ratio: 16 / 11;
   }
 
   .cv-skills span {
@@ -1102,5 +1212,27 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+  }
+}
+
+@keyframes cv-sheen {
+  0%,
+  42% {
+    transform: translateX(0) skewX(-18deg);
+  }
+
+  62%,
+  100% {
+    transform: translateX(360%) skewX(-18deg);
+  }
+}
+
+@keyframes cv-tile-sheen {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
   }
 }
