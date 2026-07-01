@@ -272,27 +272,35 @@ description: "Nurlan Mirovich is a Software Development Engineer in Test focused
 
     <form
       class="cv-card cv-form"
-      action="mailto:{{ site.social.email }}"
+      action="{{ site.contact_form.endpoint | default: '' }}"
+      data-contact-form
+      data-endpoint="{{ site.contact_form.endpoint | default: '' }}"
+      data-email="{{ site.social.email }}"
       method="post"
-      enctype="text/plain"
     >
       <label>
         First name *
-        <input type="text" name="first_name" />
+        <input type="text" name="first_name" required />
       </label>
       <label>
         Last name *
-        <input type="text" name="last_name" />
+        <input type="text" name="last_name" required />
       </label>
       <label>
         Email *
-        <input type="email" name="email" />
+        <input type="email" name="email" required />
       </label>
       <label>
         Message
         <textarea name="message" rows="5"></textarea>
       </label>
+      <label class="cv-honey" aria-hidden="true">
+        Website
+        <input type="text" name="website" tabindex="-1" autocomplete="off" />
+      </label>
+      <input type="hidden" name="source" value="nmirovich.info" />
       <button type="submit">Submit</button>
+      <p class="cv-form-status" data-form-status aria-live="polite"></p>
     </form>
   </section>
 
@@ -303,3 +311,57 @@ description: "Nurlan Mirovich is a Software Development Engineer in Test focused
     </div>
   </section>
 </main>
+
+<script>
+  if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+  }
+
+  window.addEventListener("pageshow", () => {
+    if (!window.location.hash) {
+      requestAnimationFrame(() => window.scrollTo(0, 0));
+    }
+  });
+
+  document.querySelectorAll("[data-contact-form]").forEach((form) => {
+    const status = form.querySelector("[data-form-status]");
+    const button = form.querySelector("button[type='submit']");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const endpoint = form.dataset.endpoint;
+      const fallbackEmail = form.dataset.email;
+      const data = new FormData(form);
+
+      if (data.get("website")) {
+        return;
+      }
+
+      if (!endpoint) {
+        status.textContent = `Contact form is being connected. Please email ${fallbackEmail} directly for now.`;
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = "Sending...";
+      status.textContent = "";
+
+      try {
+        await fetch(endpoint, {
+          method: "POST",
+          mode: "no-cors",
+          body: data,
+        });
+
+        form.reset();
+        status.textContent = "Message sent. Thank you.";
+      } catch (error) {
+        status.textContent = `Something went wrong. Please email ${fallbackEmail} directly.`;
+      } finally {
+        button.disabled = false;
+        button.textContent = "Submit";
+      }
+    });
+  });
+</script>

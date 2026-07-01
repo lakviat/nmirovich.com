@@ -43,11 +43,15 @@ social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
   name: Nurlan Mirovich
-  email: lakviat@gmail.com # change to your email address
+  email: nurlanmirovich@yahoo.com # change to your email address
   links:
     - https://www.linkedin.com/in/nurlan-mirovich-542335178/
     - https://github.com/lakviat # change to your github homepage
     - https://www.nmirovich.info
+
+contact_form:
+  # Paste the deployed Google Apps Script web app URL here.
+  endpoint:
 
 google_site_verification: # fill in to your verification string
 

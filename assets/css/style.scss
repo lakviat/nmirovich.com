@@ -1158,6 +1158,27 @@ body {
   border-radius: 999px;
 }
 
+.cv-form button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+}
+
+.cv-honey {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.cv-form-status {
+  min-height: 1.25rem;
+  margin: 0;
+  color: #050505;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
 .cv-footer-card {
   margin-top: 1.35rem;
 }
