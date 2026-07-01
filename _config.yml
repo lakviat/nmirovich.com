@@ -21,13 +21,14 @@ timezone: America/Chicago
 
 title: Nurlan Mirovich # the main title
 
-tagline: "AI Quality Engineering, SDET, DevOps, and Test Automation" # it will display as the sub-title
+tagline: "Software Development Engineering in Test, DevOps, and AI Tooling" # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  Nurlan Mirovich writes about AI integration in quality assurance, SDET
-  architecture, Robot Framework, Pabot, Kubernetes test execution, Dockerized
-  automation, CI/CD quality gates, Jira requirement analysis, Slack QA
-  notifications, DevOps, and software engineering best practices.
+  Nurlan Mirovich is a Software Development Engineer in Test focused on
+  automation framework development, AI-assisted engineering tools, DevOps
+  infrastructure, cloud-based test execution, CI/CD systems, Kubernetes,
+  Docker, API automation, GraphQL validation, and scalable developer feedback
+  loops.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://www.nmirovich.info"

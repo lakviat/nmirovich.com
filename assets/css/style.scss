@@ -260,3 +260,403 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* Resume homepage */
+
+.resume-site {
+  min-height: 100vh;
+  color: #10243f;
+  background: linear-gradient(120deg, rgba(30, 92, 198, 0.08), transparent 34%),
+    linear-gradient(230deg, rgba(0, 166, 200, 0.08), transparent 30%), #f5f9ff;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.resume-site a {
+  text-decoration: none;
+}
+
+.resume-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: min(1180px, calc(100% - 2rem));
+  min-height: 76px;
+  margin: 0 auto;
+  padding: 0.75rem 0;
+  background: rgba(245, 249, 255, 0.88);
+  backdrop-filter: blur(18px);
+}
+
+.resume-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #10243f;
+}
+
+.resume-brand span {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  color: #fff;
+  font-weight: 800;
+  place-items: center;
+  background: #1e5cc6;
+  border-radius: 50%;
+  box-shadow: 0 14px 26px rgba(30, 92, 198, 0.22);
+}
+
+.resume-brand strong {
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+.resume-nav nav {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.resume-nav nav a {
+  color: #31506f;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.resume-nav nav a:hover {
+  color: #1e5cc6;
+}
+
+.resume-shell {
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.resume-hero {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: center;
+  min-height: calc(100vh - 76px);
+  padding: clamp(2rem, 6vw, 5rem) 0;
+}
+
+.resume-hero__media {
+  position: relative;
+}
+
+.resume-hero__media::before {
+  position: absolute;
+  inset: 8% -8% -8% 12%;
+  content: "";
+  background: #dbeaff;
+  border-radius: 38% 62% 47% 53%;
+}
+
+.resume-hero__media img {
+  position: relative;
+  width: min(100%, 390px);
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+  border: 10px solid #fff;
+  border-radius: 8px;
+  box-shadow: 0 30px 70px rgba(18, 50, 86, 0.18);
+}
+
+.resume-kicker,
+.resume-section-label {
+  margin: 0 0 0.8rem;
+  color: #1e5cc6;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.resume-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  color: #071a33;
+  font-size: clamp(3rem, 7vw, 6.7rem);
+  font-weight: 850;
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
+.resume-hero__subtitle {
+  max-width: 680px;
+  margin: 1.5rem 0 0;
+  color: #31506f;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  line-height: 1.65;
+}
+
+.resume-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.resume-hero__actions a,
+.resume-portfolio > a,
+.resume-contact__links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.75rem 1.1rem;
+  color: #fff;
+  font-weight: 800;
+  background: #1e5cc6;
+  border: 1px solid #1e5cc6;
+  border-radius: 999px;
+  box-shadow: 0 16px 32px rgba(30, 92, 198, 0.18);
+}
+
+.resume-hero__actions a:last-child,
+.resume-contact__links a:not(:first-child) {
+  color: #10243f;
+  background: #fff;
+  border-color: #cfe0f4;
+  box-shadow: none;
+}
+
+.resume-intro,
+.resume-band,
+.resume-skills,
+.resume-feature,
+.resume-portfolio,
+.resume-contact {
+  padding: clamp(3rem, 7vw, 6rem) 0;
+  border-top: 1px solid #d8e6f6;
+}
+
+.resume-intro,
+.resume-feature,
+.resume-portfolio,
+.resume-contact {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  align-items: start;
+}
+
+.resume-intro h2,
+.resume-band h2,
+.resume-skills h2,
+.resume-feature h2,
+.resume-portfolio h2,
+.resume-contact h2 {
+  margin: 0;
+  color: #071a33;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.resume-intro p,
+.resume-band p,
+.resume-feature p,
+.resume-portfolio p,
+.resume-contact p {
+  color: #31506f;
+  font-size: 1.03rem;
+  line-height: 1.75;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  padding-bottom: clamp(3rem, 7vw, 6rem);
+}
+
+.resume-grid article,
+.resume-timeline article,
+.resume-feature__panel,
+.resume-portfolio,
+.resume-contact {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid #d8e6f6;
+  border-radius: 8px;
+  box-shadow: 0 22px 60px rgba(18, 50, 86, 0.08);
+}
+
+.resume-grid article {
+  min-height: 280px;
+  padding: 1.2rem;
+}
+
+.resume-grid span {
+  display: inline-flex;
+  margin-bottom: 2rem;
+  color: #1e5cc6;
+  font-weight: 900;
+}
+
+.resume-grid h3,
+.resume-timeline h3 {
+  margin: 0 0 0.9rem;
+  color: #071a33;
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+.resume-grid p,
+.resume-timeline p {
+  margin: 0;
+  color: #45627f;
+  line-height: 1.65;
+}
+
+.resume-band {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+.resume-timeline {
+  display: grid;
+  gap: 1rem;
+}
+
+.resume-timeline article {
+  padding: 1.25rem;
+}
+
+.resume-timeline time {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: #1e5cc6;
+  font-size: 0.8rem;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+.resume-skills {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+}
+
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.skill-cloud span {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 0.55rem 0.85rem;
+  color: #10243f;
+  font-weight: 800;
+  background: #fff;
+  border: 1px solid #cfe0f4;
+  border-radius: 999px;
+  box-shadow: 0 10px 22px rgba(18, 50, 86, 0.06);
+}
+
+.resume-feature__panel,
+.resume-portfolio,
+.resume-contact {
+  padding: clamp(1.25rem, 3vw, 2rem);
+}
+
+.resume-portfolio > a {
+  width: fit-content;
+  margin-top: 1rem;
+}
+
+.resume-contact__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-self: center;
+}
+
+.resume-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: min(1180px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+  color: #5f7894;
+}
+
+.resume-footer a {
+  color: #1e5cc6;
+  font-weight: 800;
+}
+
+@media (max-width: 980px) {
+  .resume-hero,
+  .resume-intro,
+  .resume-band,
+  .resume-skills,
+  .resume-feature,
+  .resume-portfolio,
+  .resume-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .resume-nav {
+    position: static;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.9rem;
+    padding: 1rem 0;
+  }
+
+  .resume-nav nav {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.65rem;
+  }
+
+  .resume-nav nav a {
+    font-size: 0.86rem;
+  }
+
+  .resume-hero {
+    min-height: auto;
+    padding-top: 1.5rem;
+  }
+
+  .resume-hero__media img {
+    width: min(84vw, 330px);
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-grid article {
+    min-height: auto;
+  }
+
+  .resume-hero__actions,
+  .resume-hero__actions a,
+  .resume-contact__links,
+  .resume-contact__links a {
+    width: 100%;
+  }
+
+  .resume-footer {
+    flex-direction: column;
+  }
+}

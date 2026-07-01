@@ -6,16 +6,16 @@ order: 5
 
 <!-- markdownlint-disable MD041 -->
 
-I am Nurlan Mirovich, a software quality engineer focused on AI-assisted
-testing, automation architecture, CI/CD quality gates, and scalable test
-execution.
+I am Nurlan Mirovich, a Software Development Engineer in Test focused on
+AI-assisted engineering tools, automation architecture, CI/CD systems, DevOps
+infrastructure, and scalable test execution.
 
 This site is my technical resume and engineering notebook. I write about
 software development, SDET practices, Robot Framework, Playwright, API testing,
-Kubernetes, Docker, DevOps pipelines, AI quality workflows, and the practical
-systems that help teams ship with confidence.
+Kubernetes, Docker, DevOps pipelines, AI-assisted development workflows, and the
+practical systems that help teams ship with confidence.
 
-My current focus is AI integration in quality assurance:
+My current focus is AI integration for software development and testing:
 
 - Reading Jira stories and Slack context to identify missing requirements.
 - Generating regression, smoke, edge-case, and acceptance test scenarios.
