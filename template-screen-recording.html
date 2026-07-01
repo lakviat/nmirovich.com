@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen recording style template</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #0d1117;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: ui-monospace, "SF Mono", Monaco, monospace;
+      color: #c9d1d9;
+    }
+    .frame {
+      width: 90%;
+      max-width: 960px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 80px rgba(0,0,0,0.5);
+    }
+    /* Window chrome (macOS style) */
+    .titlebar {
+      height: 38px;
+      background: #323232;
+      display: flex;
+      align-items: center;
+      padding: 0 16px;
+      gap: 8px;
+    }
+    .traffic {
+      display: flex;
+      gap: 8px;
+    }
+    .traffic span {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+    .traffic .red { background: #ff5f57; }
+    .traffic .yellow { background: #febc2e; }
+    .traffic .green { background: #28c840; }
+    .title {
+      flex: 1;
+      text-align: center;
+      font-size: 13px;
+      color: #8b949e;
+    }
+    /* Content area */
+    .content {
+      background: #161b22;
+      min-height: 400px;
+      padding: 24px;
+    }
+    .line {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .line-num {
+      color: #484f58;
+      min-width: 2em;
+      text-align: right;
+    }
+    .keyword { color: #ff7b72; }
+    .string { color: #a5d6ff; }
+    .comment { color: #8b949e; }
+    .cursor-line {
+      background: rgba(56, 139, 253, 0.15);
+      border-left: 2px solid #58a6ff;
+    }
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 18px;
+      background: #58a6ff;
+      animation: blink 1s step-end infinite;
+      vertical-align: -2px;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    .fade-in {
+      animation: fadeIn 0.5s ease-out forwards;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <div class="titlebar">
+      <div class="traffic">
+        <span class="red"></span>
+        <span class="yellow"></span>
+        <span class="green"></span>
+      </div>
+      <span class="title">cover.svg — nmirovich.com</span>
+    </div>
+    <div class="content">
+      <div class="line fade-in" style="animation-delay: 0.1s"><span class="line-num">1</span><span class="comment">// Coding Best Practices — cover</span></div>
+      <div class="line fade-in" style="animation-delay: 0.2s"><span class="line-num">2</span><span class="keyword">&lt;svg</span> xmlns=<span class="string">"http://www.w3.org/2000/svg"</span> width=<span class="string">"1200"</span> height=<span class="string">"630"</span><span class="keyword">&gt;</span></div>
+      <div class="line fade-in" style="animation-delay: 0.3s"><span class="line-num">3</span>  <span class="keyword">&lt;rect</span> width=<span class="string">"1200"</span> height=<span class="string">"630"</span> fill=<span class="string">"#1a1b1e"</span><span class="keyword">/&gt;</span></div>
+      <div class="line fade-in cursor-line" style="animation-delay: 0.4s"><span class="line-num">4</span>  <span class="keyword">&lt;g</span> transform=<span class="string">"translate(100 100)"</span><span class="keyword">&gt;</span><span class="cursor"></span></span></div>
+      <div class="line fade-in" style="animation-delay: 0.5s"><span class="line-num">5</span>    <span class="comment">&lt;!-- server rack --&gt;</span></div>
+      <div class="line fade-in" style="animation-delay: 0.6s"><span class="line-num">6</span>    <span class="keyword">&lt;rect</span> class=<span class="string">"line"</span> x=<span class="string">"0"</span> y=<span class="string">"0"</span> width=<span class="string">"280"</span> height=<span class="string">"400"</span> rx=<span class="string">"12"</span><span class="keyword">/&gt;</span></div>
+    </div>
+  </div>
+</body>
+</html>
