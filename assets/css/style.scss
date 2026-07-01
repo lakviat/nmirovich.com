@@ -965,22 +965,45 @@ body {
 }
 
 .cv-infra-card {
+  position: relative;
+  overflow: hidden;
   display: flex;
   min-height: 640px;
   flex-direction: column;
   justify-content: flex-end;
   padding: clamp(2rem, 4vw, 4rem);
   color: #fff;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       145deg,
-      rgba(0, 0, 0, 0.92),
-      rgba(7, 22, 44, 0.94)
+      rgba(0, 0, 0, 0.9) 0%,
+      rgba(4, 18, 36, 0.78) 48%,
+      rgba(0, 0, 0, 0.62) 100%
+    ),
+    var(--cv-infra-photo) center 42% / cover no-repeat;
+}
+
+.cv-infra-card::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: radial-gradient(
+      circle at 20% 18%,
+      rgba(88, 151, 255, 0.22),
+      transparent 28%
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.1) 0 1px,
+      rgba(255, 255, 255, 0.08) 0 1px,
       transparent 1px 78px
     );
+  mix-blend-mode: screen;
+  pointer-events: none;
+}
+
+.cv-infra-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .cv-infra-card span {
