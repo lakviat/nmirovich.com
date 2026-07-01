@@ -51,7 +51,7 @@ social:
 
 contact_form:
   # Paste the deployed Google Apps Script web app URL here.
-  endpoint:
+  endpoint: https://script.google.com/macros/s/AKfycbzfPWI81ED4ncp_RksoHMCBafiCwUEMpRUUS17DHAvt9SlGRcGilqMfmdt55UupDekG/exec
 
 google_site_verification: # fill in to your verification string
 

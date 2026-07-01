@@ -344,7 +344,7 @@ description: "Nurlan Mirovich is a Software Development Engineer in Test focused
       }
 
       button.disabled = true;
-      button.textContent = "Sending...";
+      button.textContent = "Submitting...";
       status.textContent = "";
 
       try {
@@ -355,12 +355,19 @@ description: "Nurlan Mirovich is a Software Development Engineer in Test focused
         });
 
         form.reset();
-        status.textContent = "Message sent. Thank you.";
+        button.textContent = "Submitted";
+        status.textContent = "Message submitted. Thank you.";
       } catch (error) {
         status.textContent = `Something went wrong. Please email ${fallbackEmail} directly.`;
-      } finally {
         button.disabled = false;
         button.textContent = "Submit";
+      } finally {
+        if (button.textContent === "Submitted") {
+          setTimeout(() => {
+            button.disabled = false;
+            button.textContent = "Submit";
+          }, 3000);
+        }
       }
     });
   });
