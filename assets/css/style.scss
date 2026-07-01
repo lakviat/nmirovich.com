@@ -718,7 +718,13 @@ body {
   font-size: 0.8rem;
 }
 
-.cv-hero,
+.cv-hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.35rem;
+  margin-top: 1.35rem;
+}
+
 .cv-contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -742,8 +748,16 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: clamp(330px, 42vw, 560px);
+  min-height: clamp(440px, 54vw, 760px);
   padding: clamp(2rem, 4vw, 4rem);
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.94) 0%,
+      rgba(0, 0, 0, 0.76) 40%,
+      rgba(0, 0, 0, 0.42) 100%
+    ),
+    var(--cv-name-photo) center 44% / cover no-repeat;
 }
 
 .cv-name::before {
@@ -759,10 +773,13 @@ body {
   );
   transform: skewX(-18deg);
   animation: cv-sheen 7s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .cv-name > * {
   position: relative;
+  z-index: 3;
 }
 
 .cv-name p,
@@ -1190,7 +1207,15 @@ body {
   }
 
   .cv-name {
-    min-height: 330px;
+    min-height: 520px;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.94) 0%,
+        rgba(0, 0, 0, 0.74) 48%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      var(--cv-name-photo) center 42% / cover no-repeat;
   }
 
   .cv-name h1 {
