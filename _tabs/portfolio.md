@@ -1,11 +1,23 @@
 ---
+layout: resume-home
 title: Portfolio
 icon: fas fa-briefcase
 order: 4
 description: "Selected software development, SDET, DevOps, automation, AI tooling, and web delivery projects by Nurlan Mirovich."
 ---
 
-<section class="pf-page" aria-label="Selected portfolio work">
+<main class="cv-page pf-page" id="portfolio">
+  <header class="cv-nav">
+    <a href="{{ '/' | relative_url }}" class="cv-brand">Nurlan Mirovich</a>
+    <nav aria-label="Primary navigation">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/' | relative_url }}#resume">Resume</a>
+      <a href="{{ '/portfolio/' | relative_url }}">Portfolio</a>
+      <a href="{{ '/' | relative_url }}#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="pf-page-inner" aria-label="Selected portfolio work">
   <section class="pf-hero">
     <div class="pf-black pf-hero-title">
       <p>Selected Work / Software Delivery / Engineering Systems</p>
@@ -181,3 +193,4 @@ description: "Selected software development, SDET, DevOps, automation, AI toolin
     </article>
   </section>
 </section>
+</main>
